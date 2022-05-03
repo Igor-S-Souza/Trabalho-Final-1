@@ -6,7 +6,6 @@
 	<title></title>
 </head>
 <body>
-	<h1>teste</h1>
-	<h1 style="color: darkred;">testando2</h1>
+<p style="color:blue;">hello world!!</p>
 </body>
 </html>
