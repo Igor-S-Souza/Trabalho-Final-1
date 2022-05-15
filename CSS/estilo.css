@@ -22,9 +22,10 @@
 }
 .submit{
 	background-color: #4F4F4F;
+	border-radius: 5px;
 	color: white;
-	height: 30px;
-	width: 80px;
+	height: 40px;
+	width: 90px;
 }
 .label{
 	float: left;
