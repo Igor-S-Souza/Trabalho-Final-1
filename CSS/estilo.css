@@ -1,0 +1,33 @@
+.corpo{
+	background-color:#fff7e9;
+}
+.div_login{
+	background-color: white;
+	margin-left: 38%;
+	margin-right: 39%;
+	position: relative;
+	border-radius: 10%;
+}
+.div_nome_empresa{
+	background-color: #ffefbd;
+	margin-top: -10px;
+	margin-right: -10px;
+	margin-left: -10px;
+}
+.input{
+	border-radius: 40px;
+	height: 25px;
+	width: 200px;
+	margin-right: 11px;
+}
+.submit{
+	background-color: #4F4F4F;
+	color: white;
+	height: 30px;
+	width: 80px;
+}
+.label{
+	float: left;
+	margin-left: 50px;
+	margin-bottom: 5px;
+}

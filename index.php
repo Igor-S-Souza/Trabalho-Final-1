@@ -27,17 +27,38 @@
 	 ?>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 	<title></title>
 </head>
-<body>
+<body class="corpo">
 	<center>
-	<form method="POST" action="verificando_usuario.php">
-		<label>Login</label><br>
-		<input type="text" name="login" placeholder="Informe seu usuário"><br><br>
-		<label>Senha</label><br>
-		<input type="password" name="senha" placeholder="Informe sua senha"><br><br>
-		<input type="submit" name="enviar">
-	</form>
+	<div class="div_nome_empresa">
+		<br>
+		<h1>Nome da empresa</h1>
+		<br>
+	</div>
+	<br>
+	<br>
+	<br>
 	</center>
+	<center>
+	<div class="div_login">
+		<br>
+		<br>
+		<h4>BEM-VINDO!</h4>
+		<br>
+		<form method="POST" action="verificando_usuario.php">
+			<label class="label"><strong>Usuário:</strong></label><br>
+			<input type="text" name="login" placeholder="Informe seu usuário" class="input"><br><br><br>
+			<label class="label"><strong>Senha:</strong></label><br>
+			<input type="password" name="senha" placeholder="Informe a sua senha" class="input"><br><br><br>
+			<input type="submit" name="enviar" class="submit" value="LOGIN">
+		</form>
+		<br>
+		<br>
+		<br>
+		<br>
+	</center>
+	</div>
 </body>
 </html>
