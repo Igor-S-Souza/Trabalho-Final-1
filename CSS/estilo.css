@@ -32,3 +32,22 @@
 	margin-left: 50px;
 	margin-bottom: 5px;
 }
+.tabela{
+	border-collapse: collapse;
+}
+.tr{
+	background-color: #ffefbd;
+	border: 1px solid black;
+}
+.td{
+	border: 1px solid black;
+	width: 200px;
+	height: 40px;
+}
+.tr2{
+    border: 1px solid black;
+}
+.td2{
+    border: 1px solid black;
+    background-color: white;
+}
