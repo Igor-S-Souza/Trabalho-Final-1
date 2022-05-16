@@ -1,9 +1,9 @@
-<?php 
+<?php
 //incluindo o banco de dados do site
 include('../BANCO/conexao.php');
 
 //iniciando uma sessão
-session_start(); 
+session_start();
 
 //definindo a data e hora local
 date_default_timezone_set('America/Sao_Paulo');
