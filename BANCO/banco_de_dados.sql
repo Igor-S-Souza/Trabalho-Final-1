@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.3
+-- version 5.1.1
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 13-Maio-2022 às 02:31
+-- Tempo de geração: 16-Maio-2022 às 05:38
 -- Versão do servidor: 10.4.22-MariaDB
--- versão do PHP: 7.4.28
+-- versão do PHP: 7.4.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -66,11 +66,10 @@ CREATE TABLE `solicitacao` (
   `setor` varchar(30) DEFAULT NULL,
   `recepcao` varchar(30) DEFAULT NULL,
   `problema` varchar(200) DEFAULT NULL,
-  `horario` varchar(10) DEFAULT NULL,
+  `horario` date DEFAULT NULL,
   `protocolo` varchar(10) DEFAULT NULL,
   `contato` varchar(30) DEFAULT NULL,
-  `data1` varchar(30) DEFAULT NULL,
-  `fk_id_solicitacao` int(11) NOT NULL
+  `data1` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -88,7 +87,8 @@ CREATE TABLE `status1` (
   `contato4` varchar(30) DEFAULT NULL,
   `setor` varchar(30) DEFAULT NULL,
   `problema` varchar(200) DEFAULT NULL,
-  `recepcao` varchar(30) DEFAULT NULL
+  `recepcao` varchar(30) DEFAULT NULL,
+  `status` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -105,6 +105,13 @@ CREATE TABLE `usuario_por_setor` (
   `nome` varchar(40) DEFAULT NULL,
   `setor` varchar(30) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Extraindo dados da tabela `usuario_por_setor`
+--
+
+INSERT INTO `usuario_por_setor` (`id`, `contato`, `senha`, `login`, `nome`, `setor`) VALUES
+(1, '867574', '123', 'igor-souza', 'Igor', 'ADM');
 
 --
 -- Índices para tabelas despejadas
@@ -160,19 +167,19 @@ ALTER TABLE `saida_solicitacao`
 -- AUTO_INCREMENT de tabela `solicitacao`
 --
 ALTER TABLE `solicitacao`
-  MODIFY `id_solicitacao` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_solicitacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de tabela `status1`
 --
 ALTER TABLE `status1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT de tabela `usuario_por_setor`
 --
 ALTER TABLE `usuario_por_setor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

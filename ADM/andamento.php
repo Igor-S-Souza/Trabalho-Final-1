@@ -1,9 +1,11 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html>
   <head>
-    include ""
-        <meta charset="utf-8">
-      <link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <?php 
+    include('../BANCO/conexao.php'); 
+    ?>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="css/estilo.css">
     <title>andamento</title>
   </head>
   <body class="corpo">
@@ -33,13 +35,11 @@
         <td>STATUS<td>
       </tr>
       <tr>
-      </tr>
       <?php
-
-$select = mysqli_query
-
-
+      $select = mysqli_query
        ?>
+
+      </tr>
 
     </TABLE>
 </center> </DIV>
