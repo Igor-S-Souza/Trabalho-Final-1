@@ -104,3 +104,6 @@ a{
 	margin-top: 10px;
 	font-size: 20px;
 }
+img{ 
+	max-width: 200px; 
+}

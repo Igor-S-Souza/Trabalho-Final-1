@@ -13,7 +13,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <center>
       <div class="div_nome_empresa">
         <br>  
-        <h1> NOME DA EMPRESA </h1> 
+        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
       </div>
     </center>

@@ -15,9 +15,9 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 
 	<center>
 	<div class="div_nome_empresa">
-		<br>
-		<h1>Nome da empresa</h1>
-		<br>
+        <br>  
+        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
+        <br>
 	</div>
 	<br>
 	<div class="div_add_user">
