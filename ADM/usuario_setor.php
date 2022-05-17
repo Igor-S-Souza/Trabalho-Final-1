@@ -12,11 +12,16 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	<title></title>
 </head>
 <body class="corpo">
+
 	<center>
 	<div class="div_nome_empresa">
 		<br>
 		<h1>Nome da empresa</h1>
 		<br>
+	</div>
+	<br>
+	<div class="div_add_user">
+		<a href="adicionar_usuario_setor.php"><div class="div_icone_2"><i class="fa-solid fa-user-plus"></i></div></a>
 	</div>
 	<br>
 	<br>
@@ -67,12 +72,13 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 			<a href="editar_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-pencil"></i></a>
 		</td>
 		<td class="td2">
-			<a href="excluir_usuario.php"><i class="fa-solid fa-trash-can"></i></a>
+			<a href="excluir_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-trash-can"></i></a>
 		</td>
 		<td class="td2">
 			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>">Atualizar senha</a>
 		</td>
 	</tr>
+	<?php } ?>
 </table>
 <div id="abrirModal" class="fundo2">
 
@@ -80,6 +86,5 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 <div>
 </center>
 </div>
-<?php } ?>
 </body>
 </html>
