@@ -1,3 +1,6 @@
+<?php 
+include ("../DADOS_USUARIO/dados_de_usuario.php");
+ ?>
 <!DOCTYPE html>
 <html>
   <head>
@@ -5,7 +8,7 @@
     include('../BANCO/conexao.php');
     ?>
     <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="../css/estilo.css">
+    <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
     <title>andamento</title>
   </head>
   <body class="corpo">
@@ -15,14 +18,14 @@
       <br><h1 id="h1"> CallServer </h1><br>
     </div>
     </center>
-
-    <CENTER> <div>
+    <div>
+    <center>
     <br>
     <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
     <br>
     <br>
 
-    <TABLE>
+    <table class="tabela">
 
       <tr class="tr">
         <td class="td">PROTOCOLO</td>
@@ -62,8 +65,9 @@
 
     <?php } ?>
 
-    </TABLE>
-</center> </DIV>
+    </table>
+</center> 
+</div>
 
   </body>
 </html>

@@ -56,11 +56,38 @@
   position:relative;
   width:200px;
   height:130px;
-	border-radius: 16px;
-	margin-right: 11px;
+  border-radius: 16px;
+  margin-right: 11px;
   font-family: sans-serif;
 
 }
 #h1 {
-	font-family: sans-serif;
+  font-family: sans-serif;
 }
+.div_menu{
+	text-align: center;
+	font-size: 50px;
+	margin-right: 40px;
+	margin-top: 40px;
+	background-color: #ffefbd;
+	width: 125px;
+	height: 120px;
+	border: 1px solid;
+	border-radius: 20px;
+	box-shadow: 1px 1px 5px black;
+}
+.div_menu_maior{
+	width: 900px;
+	height: 200px;
+	background-color: white;
+}
+.letra_div{
+	margin-bottom: 10px;
+	font-size: 15px;
+}
+.div_icone{
+	margin-top: 10px;
+}
+a{ 
+	color: inherit; 
+} 

@@ -38,7 +38,7 @@ session_start();
 							//Direcionando o usuário para a área de seu setor
                         	if ($setor == "ADM") {
                         		$_SESSION['msg_de_bem_vindo'] = "<p class=''>Olá, $nome</p>";
-                        		header("Location: ADM/usuario_setor.php");
+                        		header("Location: ADM/menu.php");
                         	}
 
                         	//Direcionando o usuário para a área de seu setor

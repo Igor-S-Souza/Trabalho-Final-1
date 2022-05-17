@@ -1,4 +1,7 @@
 <?php 
+
+include ("../DADOS_USUARIO/dados_de_usuario.php");
+
 include('../BANCO/conexao.php');
 
 $id = $_GET['id'];

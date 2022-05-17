@@ -1,3 +1,6 @@
+<?php 
+include ("../DADOS_USUARIO/dados_de_usuario.php");
+ ?>
 <!DOCTYPE html>
 <html class="fonte">
 <head>
@@ -20,8 +23,6 @@
   <form  method="POST" action="cadastrando_chamado.php">
      <br>
      <h4>SOLICITAÇÃO</h4>
-      <br><label class="label"><strong> Nome do Solicitante:</strong></label>
-      <br><input class="input" type="text" name="nome" placeholder=" seu nome"/><br><br>
     	<br><label class="label"><strong>   Motivo do Chamado:</strong></label>
       <br><textarea id="area"  type="text"  name="solicitacao" placeholder="  informe o que você deseja"></textarea> <br>
       <br><input type="submit" class="submit"  value="SOLICITAR"/>
