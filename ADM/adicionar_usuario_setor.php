@@ -1,3 +1,6 @@
+<?php 
+include ("../DADOS_USUARIO/dados_de_usuario.php");
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
