@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Tempo de geração: 17-Maio-2022 às 00:14
+-- Tempo de geração: 17-Maio-2022 às 05:37
 -- Versão do servidor: 10.4.22-MariaDB
 -- versão do PHP: 7.4.27
 
@@ -51,7 +51,8 @@ CREATE TABLE `saida_solicitacao` (
   `recepcao` varchar(30) NOT NULL,
   `problema` varchar(200) NOT NULL,
   `horario` varchar(30) NOT NULL,
-  `data` varchar(30) NOT NULL
+  `data` varchar(30) NOT NULL,
+  `solucao` varchar(500) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
@@ -90,13 +91,6 @@ CREATE TABLE `status1` (
   `recepcao` varchar(30) DEFAULT NULL,
   `status` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Extraindo dados da tabela `status1`
---
-
-INSERT INTO `status1` (`id`, `protocolo`, `data4`, `horario4`, `nome4`, `contato4`, `setor`, `problema`, `recepcao`, `status`) VALUES
-(4, '89efbb', '16/05/2022', '18:51', 'Igor', '867574', 'ADM', '412421', 'Aguardando técnico...', 'Em andamento...');
 
 -- --------------------------------------------------------
 
@@ -168,25 +162,25 @@ ALTER TABLE `contato`
 -- AUTO_INCREMENT de tabela `saida_solicitacao`
 --
 ALTER TABLE `saida_solicitacao`
-  MODIFY `id_saida` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_saida` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT de tabela `solicitacao`
 --
 ALTER TABLE `solicitacao`
-  MODIFY `id_solicitacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_solicitacao` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de tabela `status1`
 --
 ALTER TABLE `status1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- AUTO_INCREMENT de tabela `usuario_por_setor`
 --
 ALTER TABLE `usuario_por_setor`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
