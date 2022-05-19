@@ -19,6 +19,23 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
     </div>
+      <div id>
+    <?php
+        //Mensagem solicitação su
+    if(isset($_SESSION['msg_chamado_sucesso'])){
+        echo $_SESSION['msg_chamado_sucesso'];
+        //Parando sessão
+        unset($_SESSION['msg_chamado_sucesso']);
+    }
+    //Mensagem solicitação erro
+    if(isset($_SESSION['msg_chamado_erro'])){
+        echo $_SESSION['msg_chamado_erro'];
+        //Parando sessão
+        unset($_SESSION['msg_chamado_erro']);
+    }
+     ?> 
+  </div>
+
     </center>
     <div>
     <center>

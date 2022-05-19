@@ -107,3 +107,10 @@ a{
 img{ 
 	max-width: 200px; 
 }
+.teste{
+	background-color: white;
+	margin-left: 38%;
+	margin-right: 39%;
+	position: relative;
+	border-radius: 10%;
+}

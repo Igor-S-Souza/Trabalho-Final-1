@@ -1,6 +1,6 @@
 <?php 
 include ("../DADOS_USUARIO/dados_de_usuario.php");
- ?>
+?>
 <!DOCTYPE html>
 <html class="fonte">
 <head>
@@ -17,12 +17,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <br>
   </div>
   </center>
-
   <center>
      <br>
      <br>
-     <div  class="div_login">
-  <form  method="POST" action="cadastrando_chamado.php">
+     <div class="teste">
+     <form method="POST" action="cadastrando_chamado.php">
      <br>
      <h4>SOLICITAÇÃO</h4>
     	<br><label class="label"><strong>Motivo do Chamado:</strong></label>

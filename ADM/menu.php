@@ -1,5 +1,12 @@
 <?php 
 include ("../DADOS_USUARIO/dados_de_usuario.php");
+
+//Mensagem login em branco
+if(isset($_SESSION['msg_de_bem_vindo'])){
+    echo $_SESSION['msg_de_bem_vindo'];
+    //Parando sessão
+    unset($_SESSION['msg_de_bem_vindo']);
+}
  ?>
 <!DOCTYPE html>
 <html>
