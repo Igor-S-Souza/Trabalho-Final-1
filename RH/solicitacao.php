@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 
   <center>
   <div class="div_nome_empresa">
-      <br>  
+      <br>
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
   </div>
@@ -28,7 +28,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <br><textarea id="area"  type="text"  name="solicitacao" placeholder="  informe o que você deseja"></textarea> <br>
       <br><input type="submit" class="submit"  value="SOLICITAR"/>
   </form>
-</div>
 </div>
 </center>
 </body>
