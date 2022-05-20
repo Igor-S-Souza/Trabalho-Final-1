@@ -1,28 +1,35 @@
 <?php 
 include ("../DADOS_USUARIO/dados_de_usuario.php");
-
-//Mensagem login em branco
-if(isset($_SESSION['msg_de_bem_vindo'])){
-    echo $_SESSION['msg_de_bem_vindo'];
-    //Parando sessão
-    unset($_SESSION['msg_de_bem_vindo']);
-}
- ?>
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
     <script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Menu Inicial</title>
 </head>
-<body class="corpo">
+    <body class="corpo">
     <center>
       <div class="div_nome_empresa">
         <br>  
         <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
       </div>
+      <?php 
+        //Mensagem login em branco
+      if(isset($_SESSION['msg_de_bem_vindo'])){
+          echo $_SESSION['msg_de_bem_vindo'];
+          //Parando sessão
+          unset($_SESSION['msg_de_bem_vindo']);
+      }
+       ?>
+      <script type="text/javascript">
+      setTimeout(function () {
+      $(".magica").fadeOut('');
+       },2500);
+      </script>
     </center>
     <center>
       <br> 
