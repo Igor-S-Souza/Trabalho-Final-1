@@ -7,7 +7,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
     <script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <?php include("../CSS/scripts.php"); ?>
     <title>Menu Inicial</title>
 </head>
     <body class="corpo">
@@ -25,11 +25,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
           unset($_SESSION['msg_de_bem_vindo']);
       }
        ?>
-      <script type="text/javascript">
-      setTimeout(function () {
-      $(".magica").fadeOut('');
-       },2500);
-      </script>
     </center>
     <center>
       <br> 
