@@ -10,7 +10,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <?php include("../CSS/scripts.php"); ?>
     <title>Menu Inicial</title>
 </head>
-    <body class="corpo_menu">
+    <body class="corpo">
     <center>
 <!--       <div class="div_nome_empresa"> -->
 <!--         <br>  
@@ -34,11 +34,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <div class="div_menu_maior"> 
       <table>
       <tr>
-          <td><div class="div_menu"><a href="solicitacao.php"><div class="div_icone"><i class="fa-solid fa-calendar-plus"></i></div></a><div class="letra_div"><br>Abrir chamado</div></div></td>
-          <td><div class="div_menu"><a href="andamento_solicitacao.php"><div class="div_icone"><img src="../IMAGENS/chamado2.png"></div></a><div class="letra_div"><br>Solicitações</div></div></td>
-          <td><div class="div_menu"><a href="usuario_setor.php"><div class="div_icone"><i class="fa-solid fa-users"></i></div></a><div class="letra_div"><br>Usuários</div></div></td>
-          <td><div class="div_menu"><a href="andamento.php"><div class="div_icone"><i class="fa-solid fa-hourglass"></i></div></a><div class="letra_div"><br>Andamento</div></div></td>
-          <td><div class="div_menu"><a href="contatos.php"><div class="div_icone"><i class="fa-regular fa-address-card"></i></div></a><div class="letra_div"><br>Contatos</div></div></td>
+          <td><div class="div_menu"><a href="solicitacao.php"><div class="div_icone"><img src="../IMAGENS/cronograma.svg"></div></a><div class="letra_div"><br>Abrir chamado</div></div></td>
+          <td><div class="div_menu"><a href="andamento_solicitacao.php"><div class="div_icone"><img src="../IMAGENS/checklist.svg"></div></a><div class="letra_div"><br>Solicitações</div></div></td>
+          <td><div class="div_menu"><a href="usuario_setor.php"><div class="div_icone"><img src="../IMAGENS/group.svg"></div></a><div class="letra_div"><br>Usuários</div></div></td>
+          <td><div class="div_menu"><a href="andamento.php"><div class="div_icone"><img src="../IMAGENS/cronometro_lista.svg"></div></a><div class="letra_div"><br>Andamento</div></div></td>
+          <td><div class="div_menu"><a href="contatos.php"><div class="div_icone"><img src="../IMAGENS/interno.svg"></i></div></a><div class="letra_div"><br>Contatos</div></div></td>
       </tr>
     </center>
     </table>
