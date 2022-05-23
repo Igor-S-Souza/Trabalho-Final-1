@@ -11,22 +11,21 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 <body class="corpo">
 
   <center>
-  <div class="div_nome_empresa">
+<!--   <div class="div_nome_empresa">
       <br>  
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
-  </div>
+  </div> -->
   </center>
   <center>
      <br>
      <br>
-     <div class="teste">
+     <div class="div_solicitacao">
      <form method="POST" action="cadastrando_chamado.php">
      <br>
-     <h4>SOLICITAÇÃO</h4>
-    	<br><label class="label"><strong>Motivo do Chamado:</strong></label>
-      <br><textarea id="area"  type="text"  name="solicitacao" placeholder="  informe o que você deseja"></textarea> <br>
-      <br><input type="submit" class="submit"  value="SOLICITAR"/>
+     <h1 class="titulo_solicitacao">Solicitação</h1>
+      <br><textarea class="area_solicitacao"  type="text"  name="solicitacao" placeholder="  informe o seu problema:"></textarea> <br>
+      <br><input type="submit" class="submit_solicitacao"  value="SOLICITAR"/>
   </form>
 </div>
 </div>

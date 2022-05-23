@@ -28,15 +28,16 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
+	<script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
 	<title></title>
 </head>
 <body class="corpo">
 	<center>
-	<div class="div_nome_empresa">
+<!-- 	<div class="div_nome_empresa">
 		<br>
 		<h1>Nome da empresa</h1>
 		<br>
-	</div>
+	</div> -->
 	<br>
 	<br>
 	<br>
@@ -45,14 +46,24 @@
 	<div class="div_login">
 		<br>
 		<br>
-		<h4>BEM-VINDO!</h4>
+		<div>
+		<h1 class="titulo_login">Login</h1>
+		</div>
 		<br>
-		<form method="POST" action="verificando_usuario.php">
-			<label class="label"><strong>Usuário:</strong></label><br>
+		<br>
+		<br>
+		<form method="POST" action="verificando_usuario.php" class="form">
+			<div class="div_login_esp">
+			<div class="div_label"><img src="IMAGENS/user2.png" class="img_user"></div>
 			<input type="text" name="login" placeholder="Informe seu usuário" class="input"><br><br><br>
-			<label class="label"><strong>Senha:</strong></label><br>
+			</div>
+			<div class="div_login_esp">
+			<div class="div_label"><img src="IMAGENS/cadeado2.png" class="img_cadeado"></div>
 			<input type="password" name="senha" placeholder="Informe a sua senha" class="input"><br><br><br>
+			</div>
+			<div class="div_submit">
 			<input type="submit" name="enviar" class="submit" value="LOGIN">
+			</div>
 		</form>
 		<br>
 		<br>
