@@ -1,9 +1,9 @@
-<?php  
+<?php
 
 include ("../DADOS_USUARIO/dados_de_usuario.php");
- 
+
 //incluindo o banco de dados do site
-include("../BANCO/conexao.php"); 
+include("../BANCO/conexao.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -14,17 +14,17 @@ include("../BANCO/conexao.php");
 </head>
 <body class="corpo">
 
-    <center>
+    <!-- <center>
       <div class="div_nome_empresa">
-        <br>  
+        <br>
         <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
       </div>
-    </center>
+    </center> -->
 
     <center>
 
-    <h2> Contatos </h2> 
+    <h2> Contatos </h2>
     <br>
 
 <table class="tabela">
@@ -34,15 +34,16 @@ include("../BANCO/conexao.php");
           <td class="td">SETOR</td>
           <td class="td">CONTATO</td>
       </tr>
-      <?php   
-        $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor ");
+
+      <?php
+        $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where setor='RH' ");
         WHILE($campo = mysqli_fetch_array($selecionando)){
               $nome = $campo['nome'];
               $setor = $campo['setor'];
               $contato = $campo['contato'];
 
        ?>
-      <tr class="tr2">  
+      <tr class="tr2">
           <td class="td2"><?php  echo $nome; ?> </td>
           <td class="td2"><?php  echo $setor; ?> </td>
           <td class="td2"><?php  echo $contato; ?> </td>
