@@ -12,7 +12,7 @@ $data = date('d/m/Y');
 
 //pegando o id do usuário
 $id = $_SESSION['id_do_usuario'];
-
+if (isset(_POST['solicitacao'])) {
 //recebendo o chamado do usuário
 $solicitacao = $_POST['solicitacao'];
 
@@ -32,20 +32,26 @@ $inserindo = mysqli_query($conexao, "INSERT INTO solicitacao (nome, setor, recep
 ////inserindo o chamado e as informações do usuário na tabela de status1
 $inserindo2 = mysqli_query($conexao,"INSERT INTO status1 (protocolo,data4,horario4,nome4,contato4,setor,problema,recepcao,status) values ('$protocolo', '$data', '$hora','$nome','$contato','$setor', '$solicitacao','Aguardando técnico...','Em andamento...')");
 }
+//Caso não receba o chamado
+}else{
+  $_SESSION['msg_sem_chamado_erro'] = "<p class='magica_erro'>Insira seu chamado!</p>";
+  header("location:solicitacao.php");
+}
+
 //caso tenha inserido os dados na tabela de solicitação
 if (isset($inserindo)) {
   //caso tenha inserido os dados na tabela de status1
   if (isset($inserindo2)) {
-  	$_SESSION['msg_chamado_sucesso'] = 'seu chamado foi aberto com sucesso!';
+  	$_SESSION['msg_chamado_sucesso'] = '<p class="magica">seu chamado foi aberto com sucesso!';
     header("location:andamento.php");
   //caso não tenha inserido os dados na tabela de solicitação
   }else{
-  	$_SESSION['msg_chamado_erro'] = 'Algo deu errado!';
+  	$_SESSION['msg_chamado_erro'] = '<p class="magica_erro">Algo deu errado!';
   	header("location:solicitacao.php");
   }
 //caso não tenha inserido os dados na tabela de status1
 }else{
-  	$_SESSION['msg_chamado_erro'] = 'Algo deu errado!';
+  	$_SESSION['msg_chamado_erro'] = '<p class="magica_erro">Algo deu errado!';
   	header("location:solicitacao.php");
   }
  ?>

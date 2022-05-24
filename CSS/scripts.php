@@ -4,3 +4,8 @@
       $(".magica").fadeOut('');
        },2500);
 </script>
+<script type="text/javascript">
+      setTimeout(function () {
+      $(".magica_erro").fadeOut('');
+       },2500);
+</script>

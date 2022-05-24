@@ -130,16 +130,17 @@ a{
 	font-family: sans-serif;
 }
 .magica_erro{
-	background-color: #8B0000;
+	background-color: #FF0000;
 	height: 6vh;
 	align-items: center;
 	text-align: center;
 	font-size: 3vh;
 	margin-top: -10px;
-	margin-right: -10px;
+	margin-right: -8px;
 	margin-left: -10px;
 	padding-top: 10px;
 	font-family: sans-serif;
+	border: none;
 }
 .titulo_login{
 	color: #2191d0;
