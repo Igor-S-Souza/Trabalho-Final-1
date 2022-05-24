@@ -37,13 +37,13 @@ session_start();
                         	
 							//Direcionando o usuário para a área de seu setor
                         	if ($setor == "ADM") {
-                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Olá, $nome</p>";
+                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo, $nome</p>";
                         		header("Location: ADM/menu.php");
                         	}
 
                         	//Direcionando o usuário para a área de seu setor
                         	if ($setor == "RH") {
-                        		$_SESSION['msg_de_bem_vindo'] = "<p class=''>Olá, $nome</p>";
+                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo, $nome</p>";
                         		header("Location: RH/menu.php");
                         	}
 						}
@@ -52,7 +52,7 @@ session_start();
 				//Caso as credenciais sejam inválidas
 				else {
 					//Mensagem de login inválido
-					$_SESSION['msg_credenciais_invalidas'] = "<p class=''>Login incorreto</p>";
+					$_SESSION['msg_credenciais_invalidas'] = "<p class='magica_erro'>Login incorreto</p>";
 					//Redirecionando o usuário para a página de login
 					header("Location: index.php");
 				}
@@ -60,7 +60,7 @@ session_start();
 			//Caso o usuário não tenha inserido o campo senha
 			else {
 				//Indicando ao usuário que o campo senha deve ser inserido
-				$_SESSION['msg_senha_em_branco'] = "<p class=''>Insira a senha de usuário</p>";
+				$_SESSION['msg_senha_em_branco'] = "<p class='magica_erro'>Insira a senha de usuário</p>";
 				//Redirecionando o usuário para a página de login
 				header("Location: index.php");
 			}
@@ -68,7 +68,7 @@ session_start();
 		//Caso o usuário não tenha preenchido o campo login
 		else {
 			//Indicando ao usuário que o campo login deve ser inserido
-			$_SESSION['msg_login_em_branco'] = "<p class=''>Insira o login de usuário</p>";
+			$_SESSION['msg_login_em_branco'] = "<p class='magica_erro'>Insira o login de usuário</p>";
 			//Redirecionando o usuário para a página de login
 			header("Location: index.php");
 		}
