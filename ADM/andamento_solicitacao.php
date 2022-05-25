@@ -26,47 +26,48 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
     <br>
     <br>
+    <div class="div_tabela_andamento">
+      <table class="tabela">
 
-    <table class="tabela">
+        <tr class="tr">
+          <td class="td">PROTOCOLO</td>
+          <td class="td">DATA</td>
+          <td class="td">HORA</td>
+          <td class="td">NOME</td>
+          <td class="td">SETOR</td>
+          <td class="td">PROBLEMA</td>
+          <td class="td">RECEPÇÃO</td>
+          <td class="td">FINALIZAR</td>
+        </tr>
 
-      <tr class="tr">
-        <td class="td">PROTOCOLO</td>
-        <td class="td">DATA</td>
-        <td class="td">HORA</td>
-        <td class="td">NOME</td>
-        <td class="td">SETOR</td>
-        <td class="td">PROBLEMA</td>
-        <td class="td">RECEPÇÃO</td>
-        <td class="td">FINALIZAR</td>
-      </tr>
+        <?php
+        $select = mysqli_query ($conexao,"SELECT * FROM solicitacao ORDER BY id_solicitacao");
+        while ($campo = mysqli_fetch_array($select)){
+        $id = $campo['id_solicitacao'];
+        $protocolo =  $campo['protocolo'];
+        $data =  $campo['data1'];
+        $horario =  $campo['horario'];
+        $nome =  $campo['nome'];
+        $setor = $campo ['setor'];
+        $problema =  $campo['problema'];
+        $recepcao =  $campo['recepcao'];
 
-      <?php
-      $select = mysqli_query ($conexao,"SELECT * FROM solicitacao ORDER BY id_solicitacao");
-      while ($campo = mysqli_fetch_array($select)){
-      $id = $campo['id_solicitacao'];
-      $protocolo =  $campo['protocolo'];
-      $data =  $campo['data1'];
-      $horario =  $campo['horario'];
-      $nome =  $campo['nome'];
-      $setor = $campo ['setor'];
-      $problema =  $campo['problema'];
-      $recepcao =  $campo['recepcao'];
+         ?>
+        <tr class="tr2">
+        <td class="td2"><?php echo $protocolo; ?></td>
+        <td class="td2"><?php echo $data; ?></td>
+        <td class="td2"><?php echo $horario; ?></td>
+        <td class="td2"><?php echo $nome; ?></td>
+        <td class="td2"><?php echo $setor; ?></td>
+        <td class="td2"><?php echo $problema; ?></td>
+        <td class="td2"><?php echo $recepcao; ?></td>
+        <td class="td2"><a href="finalizar_chamado.php?id=<?php echo $id ?>"><img src="../IMAGENS/finalizar.svg" class="finalizar_img"></a></td>
+        </tr>
 
-       ?>
-      <tr class="tr2">
-      <td class="td2"><?php echo $protocolo; ?></td>
-      <td class="td2"><?php echo $data; ?></td>
-      <td class="td2"><?php echo $horario; ?></td>
-      <td class="td2"><?php echo $nome; ?></td>
-      <td class="td2"><?php echo $setor; ?></td>
-      <td class="td2"><?php echo $problema; ?></td>
-      <td class="td2"><?php echo $recepcao; ?></td>
-      <td class="td2"><a href="finalizar_chamado.php?id=<?php echo $id ?>">Finalizar</a></td>
-      </tr>
-
-    <?php } ?>
+        <?php } ?>
 
     </table>
+  </div>
 </center>
 </div>
 
