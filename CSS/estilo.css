@@ -59,6 +59,10 @@
 		overflow: hidden;
   	text-overflow: ellipsis;
 
+=======
+	text-overflow: ellipsis;
+	height: 25px;
+>>>>>>> 459a2581dd6def50da6d8a7499b62ad9623b7103
 
 }
 #h1 {
@@ -214,11 +218,9 @@ img{
 }
 .titulo_solicitacao{
 	color: #2191d0;
-	float: left;
 	font-size: 8vh;
 	margin-top: 1vh;
 	margin-bottom: 6vh;
-	margin-left: 8vh;
 	font-family: sans-serif;
 }
 .titulo_solução{

@@ -38,15 +38,15 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		<td class="td">
 			USUÁRIO
 		</td>
-		<td class="td">
+		<!-- <td class="td">
 			EDITAR
 		</td>
 		<td class="td">
 			EXCLUIR
-		</td>
-		<td class="td">
+		</td> -->
+		<!-- <td class="td">
 			ATUALIZAR SENHA
-		</td>
+		</td> -->
 	</tr>
 <?php
 	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where SETOR = '$setor' ORDER BY id");
@@ -66,15 +66,15 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		<td class="td2">
 			<?php echo $login; ?>
 		</td>
-		<td class="td2">
+		<!-- <td class="td2">
 			<a href="editar_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-pencil"></i></a>
 		</td>
 		<td class="td2">
 			<a href="excluir_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-trash-can"></i></a>
-		</td>
-		<td class="td2">
+		</td> -->
+		<!-- <td class="td2">
 			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>">Atualizar senha</a>
-		</td>
+		</td> -->
 	</tr>
 	<?php } ?>
 </table>

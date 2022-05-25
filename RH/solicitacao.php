@@ -17,7 +17,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
    <form method="POST" action="cadastrando_chamado.php">
    <br>
    <h1 class="titulo_solicitacao">Solicitação</h1>
-    <br><textarea class="area_solicitacao"  type="text"  name="solicitacao" placeholder="  informe o seu problema:"></textarea> <br>
+    <textarea class="area_solicitacao"  type="text"  name="solicitacao" placeholder="  informe o seu problema:"></textarea> <br>
     <br><input type="submit" class="submit_solicitacao"  value="SOLICITAR"/>
 </form>
 </div>
