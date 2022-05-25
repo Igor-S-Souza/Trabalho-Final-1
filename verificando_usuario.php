@@ -1,4 +1,4 @@
-<?php 
+<?php
 //incluindo a conexão com o banco
 include ('BANCO/conexao.php');
 //iniciando a sessão
@@ -33,17 +33,17 @@ session_start();
                         	//Criando sessão para o login do usuário
                         	$_SESSION['login_do_usuario'] = $campo['login'];
                         	//Criando sessão para a senha do usuário
-                        	$_SESSION['senha_do_usuario'] = $campo['senha']; 
-                        	
+                        	$_SESSION['senha_do_usuario'] = $campo['senha'];
+
 							//Direcionando o usuário para a área de seu setor
                         	if ($setor == "ADM") {
-                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo, $nome</p>";
+                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo(a), $nome</p>";
                         		header("Location: ADM/menu.php");
                         	}
 
                         	//Direcionando o usuário para a área de seu setor
                         	if ($setor == "RH") {
-                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo, $nome</p>";
+                        		$_SESSION['msg_de_bem_vindo'] = "<p class='magica'>Bem vindo(a), $nome</p>";
                         		header("Location: RH/menu.php");
                         	}
 						}
