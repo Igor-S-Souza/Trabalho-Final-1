@@ -60,6 +60,7 @@
 	overflow: hidden;
 	text-overflow: ellipsis;
 	height: 75px;
+>>>>>>> 4e3c670ea7bd4b668193a607c2b08d3314010e02
 
 }
 #h1 {
@@ -78,6 +79,9 @@
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px #2191d0;
 }
+#td_especial:hover{
+	height: 100;
+}
 .div_menu:hover {
     transform: scale(1.1);
     border: none;
@@ -85,7 +89,7 @@
     background-size: 900%;
     background-position: left;
 }
-.div_menu_maior{
+.div_menu_maior{s
 	margin-top: 15vh;
 	width: 150vh;
 	height: 50vh;
@@ -212,12 +216,19 @@ img{
 }
 .titulo_solicitacao{
 	color: #2191d0;
-	float: left;
 	font-size: 8vh;
 	margin-top: 1vh;
 	margin-bottom: 6vh;
-	margin-left: 8vh;
 	font-family: sans-serif;
+}
+.titulo_solução{
+	color: #2191d0;
+	float: center;
+	font-size: 8vh;
+	margin-top: 1vh;
+	margin-bottom: 6vh;
+	font-family: sans-serif;
+
 }
 .submit_solicitacao{
 	background-color: #2191d0;
@@ -245,7 +256,6 @@ img{
   padding-top: 5vh;
   font-size: 4vh;
   resize: none;
-
 }
 .div_tabela_andamento {
 	margin-top: 12vh;
