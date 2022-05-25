@@ -13,13 +13,13 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
   </head>
   <body class="corpo">
 
-    <center>
-    <div class="div_nome_empresa">
+    <!--<center>
+      <div class="div_nome_empresa">
       <br>
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
     </div>
-    </center>
+    </center>!-->
     <div>
     <center>
     <br>

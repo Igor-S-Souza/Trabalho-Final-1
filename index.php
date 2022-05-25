@@ -29,6 +29,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="CSS/estilo.css">
 	<script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
+	<?php include("CSS/scripts.php"); ?>
 	<title></title>
 </head>
 <body class="corpo">
