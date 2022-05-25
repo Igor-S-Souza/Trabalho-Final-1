@@ -12,6 +12,16 @@
 	background-color: #F0F8FF;
 	position: relative;
 }
+.div_altsenha {
+	background-color: white;
+	margin-top: 14vh;
+	width: 50vh;
+	height: 50vh;
+	background-color: #F0F8FF;
+	position: relative;
+
+
+}
 .div_nome_empresa{
 	background-color: #ffefbd;
 	margin-top: -10px;
