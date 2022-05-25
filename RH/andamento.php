@@ -1,5 +1,6 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
+include ("../CSS/scripts.php")
  ?>
 <!DOCTYPE html>
 <html>
@@ -14,12 +15,12 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
   <body class="corpo">
 
     <center>
-    <div class="div_nome_empresa">
-      <br>  
+    <!-- <div class="div_nome_empresa">
+      <br>
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
     </div>
-      <div id>
+      <div id> -->
     <?php
         //Mensagem solicitação su
     if(isset($_SESSION['msg_chamado_sucesso'])){
@@ -33,7 +34,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         //Parando sessão
         unset($_SESSION['msg_chamado_erro']);
     }
-     ?> 
+     ?>
   </div>
 
     </center>
@@ -77,15 +78,15 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <td class="td2"><?php echo $horario ?></td>
       <td class="td2"><?php echo $nome ?></td>
       <td class="td2"><?php echo $setor ?></td>
-      <td class="td2"><?php echo $problema ?></td>
+      <td class="td2" id="td_especial"><?php echo $problema ?></td>
       <td class="td2"><?php echo $recepcao ?></td>
       <td class="td2"><?php echo $status?></td>
       </tr>
-
+<label onclick="return newPopup('<?php echo $problema; ?>') ;" ></label>
     <?php } ?>
 
     </table>
-</center> 
+</center>
 </div>
 
   </body>

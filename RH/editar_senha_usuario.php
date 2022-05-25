@@ -1,5 +1,5 @@
-<?php 
- 
+<?php
+
 include ("../DADOS_USUARIO/dados_de_usuario.php");
 
 $id = $_GET['id'];

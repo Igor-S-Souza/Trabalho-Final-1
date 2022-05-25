@@ -1,4 +1,4 @@
-<?php 
+<?php
 //incluindo o banco de dados do site
 include('../BANCO/conexao.php');
 
@@ -12,7 +12,7 @@ $conf_senha = $_POST['conf_senha'];
 //verificando se as duas senhas são iguais
 if ($senha == $conf_senha) {
 	//alterando a senha do usuário
-	$alterando = mysqli_query($conexao,"UPDATE usuario_por_setor SET senha = '$conf_senha'");
+	$alterando = mysqli_query($conexao,"UPDATE usuario_por_setor SET senha = '$conf_senha' WHERE id = '$id'");
 	//se a senha foi inserida com sucesso
 	if (isset($alterando)){
 		$_SESSION['msg_senha_sucesso'] = "<p class ''>Senha alterada com sucesso!</p>";

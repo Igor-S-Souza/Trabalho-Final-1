@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
 ?>
 <!DOCTYPE html>
@@ -12,7 +12,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 
   <center>
 <!--   <div class="div_nome_empresa">
-      <br>  
+      <br>
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
   </div> -->
@@ -23,7 +23,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
      <div class="div_solicitacao">
      <form method="POST" action="cadastrando_chamado.php">
      <br>
-     <h1 class="titulo_solicitacao">Solicitação</h1>
+     <h1 class="titulo_solicitacao">solicitação</h1>
       <br><textarea class="area_solicitacao"  type="text"  name="solicitacao" placeholder="  informe o seu problema:"></textarea> <br>
       <br><input type="submit" class="submit_solicitacao"  value="SOLICITAR"/>
   </form>

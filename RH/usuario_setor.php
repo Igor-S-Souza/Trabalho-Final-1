@@ -14,15 +14,15 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 <body class="corpo">
 
 	<center>
-	<div class="div_nome_empresa">
+	<!-- <div class="div_nome_empresa">
         <br>
         <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
 	</div>
 	<br>
-	
+
 	<br>
-	<br>
+	<br> -->
 	<h2>USUÁRIOS</h2>
 	</center>
 <div class="">
@@ -49,7 +49,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		</td>
 	</tr>
 <?php
-	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where SETOR = 'RH' ORDER BY id");
+	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where SETOR = '$setor' ORDER BY id");
 	WHILE($campo = mysqli_fetch_array($selecionando)){
 		 $id = $campo['id'];
 		 $nome = $campo['nome'];

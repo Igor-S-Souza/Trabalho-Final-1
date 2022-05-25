@@ -32,7 +32,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         <td><div class="div_menu"><a href="usuario_setor.php"><div class="div_icone"><img src="../IMAGENS/group.svg"></div></a><div class="letra_div"><br>Usuários</div></div></td>
         <td><div class="div_menu"><a href="andamento.php"><div class="div_icone"><img src="../IMAGENS/cronometro_lista.svg"></div></a><div class="letra_div"><br>Andamento</div></div></td>
         <td><div class="div_menu"><a href="contatos.php"><div class="div_icone"><img src="../IMAGENS/interno.svg"></i></div></a><div class="letra_div"><br>Contatos</div></div></td>
-                <td><div class="div_menu"><a href="alterando_senha_usuario.php"><div class="div_icone"> </div></a><div class="letra_div"><br>Alterar Senha</div></div></td>
+        <td><div class="div_menu"><a href="editar_senha_usuario.php?id=<?php echo $_SESSION['id_do_usuario']; ?>"><div class="div_icone"><img src="../IMAGENS/cadeado-aberto.svg"></div></a><div class="letra_div"><br>Alterar Senha</div></div></td>
       </tr>
     </center>
     </table>

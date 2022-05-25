@@ -57,7 +57,7 @@
     background-color: white;
 		max-width: 500px;
 		overflow: hidden;
-	text-overflow: ellipsis;
+  	text-overflow: ellipsis;
 
 
 }
@@ -77,6 +77,9 @@
 	border-radius: 20px;
 	box-shadow: 5px 5px 10px #2191d0;
 }
+#td_especial:hover{
+	height: 100;
+}
 .div_menu:hover {
     transform: scale(1.1);
     border: none;
@@ -84,7 +87,7 @@
     background-size: 900%;
     background-position: left;
 }
-.div_menu_maior{
+.div_menu_maior{s
 	margin-top: 15vh;
 	width: 150vh;
 	height: 50vh;
@@ -216,6 +219,15 @@ img{
 	margin-bottom: 6vh;
 	margin-left: 8vh;
 	font-family: sans-serif;
+}
+.titulo_solução{
+	color: #2191d0;
+	float: center;
+	font-size: 8vh;
+	margin-top: 1vh;
+	margin-bottom: 6vh;
+	font-family: sans-serif;
+
 }
 .submit_solicitacao{
 	background-color: #2191d0;

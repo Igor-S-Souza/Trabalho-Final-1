@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
 
 $id = $_GET['id'];
@@ -12,26 +12,24 @@ $id = $_GET['id'];
 </head>
 <body class="corpo">
 
-  <center>
+  <!-- <center>
   <div class="div_nome_empresa">
-    <br>  
+    <br>
     <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
     <br>
   </div>
-  </center>
+  </center> -->
 
   <center>
      <br>
      <br>
-     <div  class="div_login">
+     <div  class="div_solicitacao">
   <form  method="POST" action="verifica_solucao.php?id=<?php echo $id ?>">
      <br>
-     <h4>SOLUÇÃO DO PROBLEMA</h4>
-    	<br><label class="label"><strong></strong></label>
-      <br><textarea id="area"  type="text"  name="solucao" placeholder="Informe a solução"></textarea> <br>
-      <br><input type="submit" class="submit"  value="Finalizar"/>
+     <h1 class="titulo_solução">Solução</h1>
+      <br><textarea class="area_solicitacao"  type="text"  name="solucao" placeholder="  informe a solução"></textarea> <br>
+      <br><input type="submit" class="submit_solicitacao"  value="FINALIZAR"/>
   </form>
-</div>
 </div>
 </center>
 </body>

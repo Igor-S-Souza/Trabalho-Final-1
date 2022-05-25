@@ -4,3 +4,12 @@
       $(".magica").fadeOut('');
        },2500);
 </script>
+
+<script language=javascript type="text/javascript">
+function newPopup(texto){
+
+  newpopupWindow = window.open ('', 'pagina', "width=250 height=250");
+  newpopupWindow.document.write (texto);
+
+}
+</script>
