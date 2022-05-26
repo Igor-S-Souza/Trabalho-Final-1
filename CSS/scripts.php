@@ -4,6 +4,11 @@
       $(".magica").fadeOut('');
        },2500);
 </script>
+<script type="text/javascript">
+      setTimeout(function () {
+      $(".magica_erro").fadeOut('');
+       },2500);
+</script>
 
 <script language=javascript type="text/javascript">
 function newPopup(texto){
