@@ -22,9 +22,9 @@
 }
 .titulo_senha{
 	color: #2191d0;
-	font-size: 3vh;
-	margin-top:10vh;
-	margin-bottom: 6vh;
+	font-size: 4vh;
+	font-weight: 700;
+	margin-top: 6vh;
 	font-family: sans-serif;
 
 }
@@ -41,6 +41,18 @@
 	font-family: sans-serif;
 
 }
+.input_alteracao{
+	float: center
+	height: 5vh;
+	width: 40vh;
+	background-color: #E6E6FA;
+	border:none;
+	color: #2191d0;
+	text-decoration-color: #2191d0;
+	font-size: 3vh;
+	font-family: sans-serif;
+	}
+
 .submit_senha {
 	background-color: #2191d0;
 	border-radius: 5px;
