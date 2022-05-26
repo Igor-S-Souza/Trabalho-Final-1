@@ -43,37 +43,34 @@
 	margin-bottom: 5px;
 }
 .tabela{
+	width: 100%;
 	border-collapse: collapse;
 }
 .tr{
-	background-color: #96f2ad;
+	font-family: sans-serif;
+	background-color: rgba(114,205,249,1);
 	border: 1px solid black;
 }
 .td{
 	border: 1px solid black;
-	width: 200px;
+	width: 150px;
 	height: 40px;
-	max-width: 500px;
 	white-space: nowrap;
 	overflow: hidden;
 	text-overflow: ellipsis;
 
 }
 .tr2{
+	font-family: sans-serif;
     border: 1px solid black;
 }
 .td2{
     border: 1px solid black;
     background-color: #E6E6FA;
-		max-width: 500px;
-		overflow: hidden;
-  	text-overflow: ellipsis;
-
-=======
+	max-width: 500px;
+	overflow: hidden;
 	text-overflow: ellipsis;
-	height: 25px;
->>>>>>> 459a2581dd6def50da6d8a7499b62ad9623b7103
-
+	height: 75px;
 }
 #h1 {
   font-family: sans-serif;
@@ -81,7 +78,7 @@
 .div_menu{
 	text-align: center;
 	font-size: 50px;
-	margin-left: 2vh;
+	margin-left: 4%;
 	margin-right: 4vh;
 	margin-top: 10vh;
 	background-color: #E6E6FA;
@@ -101,9 +98,10 @@
     background-size: 900%;
     background-position: left;
 }
-.div_menu_maior{s
-	margin-top: 15vh;
-	width: 150vh;
+.div_menu_maior{
+	margin-top: 8%;
+	margin-bottom: 10%;
+	width: 85%;
 	height: 50vh;
 	background-color: white;
 	border-radius: 2vh;
@@ -268,5 +266,30 @@ img{
   padding-top: 5vh;
   font-size: 4vh;
   resize: none;
+}
+.div_tabela_andamento {
+	margin-top: 12vh;
+	height: 63.5vh;
+	min-width: 90%;
+	max-width: 90%;
+	background-color: white;
+    overflow: auto;
+}
+.finalizar_img{
+	margin-left: 2vh;
+	height: 9vh;
+	width: 9vh;
+}
+::-webkit-scrollbar {
+width:10px;
+height: 10px;
+}
+ 
 
+::-webkit-scrollbar-track {
+background:#333;
+}
+ 
+::-webkit-scrollbar-thumb {
+background: #2e9dd8;
 }
