@@ -33,6 +33,7 @@
 	margin-bottom: 5px;
 }
 .tabela{
+	width: 100%;
 	border-collapse: collapse;
 }
 .tr{
@@ -258,10 +259,9 @@ img{
 }
 .div_tabela_andamento {
 	margin-top: 12vh;
-	min-height: 50vh;
-	min-width: 189.1vh;
-	max-height: 50vh;
-	max-width: 189.1vh;
+	height: 63.5vh;
+	min-width: 90%;
+	max-width: 90%;
 	background-color: white;
     overflow: auto;
 }
@@ -269,4 +269,17 @@ img{
 	margin-left: 2vh;
 	height: 9vh;
 	width: 9vh;
+}
+::-webkit-scrollbar {
+width:10px;
+height: 10px;
+}
+ 
+
+::-webkit-scrollbar-track {
+background:#333;
+}
+ 
+::-webkit-scrollbar-thumb {
+background: #2e9dd8;
 }
