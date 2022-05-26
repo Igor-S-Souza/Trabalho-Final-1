@@ -14,12 +14,41 @@
 }
 .div_altsenha {
 	background-color: white;
-	margin-top: 14vh;
+	margin-top: 25vh;
 	width: 50vh;
 	height: 50vh;
 	background-color: #F0F8FF;
 	position: relative;
+}
+.titulo_senha{
+	color: #2191d0;
+	font-size: 3vh;
+	margin-top:10vh;
+	margin-bottom: 6vh;
+	font-family: sans-serif;
 
+}
+.input_senha{
+	float: center
+	height: 7.7vh;
+	width: 40vh;
+	margin-top: 55px;
+	background-color: #E6E6FA;
+	border:none;
+	color: #2191d0;
+	text-decoration-color: #2191d0;
+	font-size: 3vh;
+	font-family: sans-serif;
+
+}
+.submit_senha {
+	background-color: #2191d0;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	height: 30px;
+	width: 18vh;
+	font-family: sans-serif;
 
 }
 .div_nome_empresa{
@@ -284,12 +313,12 @@ img{
 width:10px;
 height: 10px;
 }
- 
+
 
 ::-webkit-scrollbar-track {
 background:#333;
 }
- 
+
 ::-webkit-scrollbar-thumb {
 background: #2e9dd8;
 }

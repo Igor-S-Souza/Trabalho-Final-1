@@ -16,10 +16,14 @@ $id = $_GET['id'];
 <center>
   <div class="div_altsenha">
 <form method="POST" action="verificando_senha_usuario.php?id=<?php echo $id ?>">
-	<label>Senha:</label><br>
-	<input type="password" name="senha" placeholder="Valide sua senha"><br><br>
+  <br>
+  <br>
+  <br>
+	<label class="titulo_senha">SENHA ATUAL:</label><br>
+	<input type="password" class="input_senha" name="senha" placeholder="         Valide sua senha"><br><br><br><br>
 	<input type="submit" class="submit_senha" name="enviar">
 </form>
+
 </div>
 </center>
 </body>
