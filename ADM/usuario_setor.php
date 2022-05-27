@@ -14,11 +14,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 <body class="corpo">
 
 	<center>
-	<div class="div_nome_empresa">
+<!-- 	<div class="div_nome_empresa">
         <br>  
         <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
-	</div>
+	</div> -->
 	<br>
 	<div class="div_add_user">
 		<a href="adicionar_usuario_setor.php"><div class="div_icone_2"><i class="fa-solid fa-user-plus"></i></div></a>
@@ -29,6 +29,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	</center>
 <div class="">
 <center>
+<div class="div_tabela_andamento">
 <table class="tabela">
 	<tr class="tr">
 		<td class="td">
@@ -40,13 +41,13 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		<td class="td">
 			USUÁRIO
 		</td>
-		<td class="td">
+		<td class="td_editar2">
 			EDITAR
 		</td>
-		<td class="td">
+		<td class="td_excluir2">
 			EXCLUIR
 		</td>
-		<td class="td">
+		<td class="td_atualizar_senha2">
 			ATUALIZAR SENHA
 		</td>
 	</tr>
@@ -68,18 +69,19 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		<td class="td2">
 			<?php echo $login; ?>
 		</td>
-		<td class="td2">
-			<a href="editar_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-pencil"></i></a>
+		<td class="td_editar">
+			<a href="editar_usuario.php?id=<?php echo $id; ?>"><img src="../IMAGENS/lapis.png" class="lapis"></a>
 		</td>
-		<td class="td2">
-			<a href="excluir_usuario.php?id=<?php echo $id; ?>"><i class="fa-solid fa-trash-can"></i></a>
+		<td class="td_excluir">
+			<a href="excluir_usuario.php?id=<?php echo $id; ?>"><img src="../IMAGENS/lixeira_fechada.png" class="lixeira"></i></a>
 		</td>
-		<td class="td2">
-			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>">Atualizar senha</a>
+		<td class="td_atualizar_senha">
+			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>"><img src="https://request.br.ironmountain.com/refiwebMvc/Images/password.png" class="imagem_cadeado"></a>
 		</td>
 	</tr>
 	<?php } ?>
 </table>
+</div>
 <div id="abrirModal" class="fundo2">
 
 
