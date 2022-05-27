@@ -17,6 +17,7 @@ $id = $_GET['id'];
 	<form method="POST" action="alterando_senha_usuario.php?id=<?php echo $id;?>">
     <br>
     <br>
+    <br>
 		<label class="titulo_senha">NOVA SENHA:</label>
 		<input type="password" class="input_alteracao" name="senha" placeholder="   defina uma nova senha"><br><br><br>
 		<label class="titulo_senha">CONFIRME:</label>

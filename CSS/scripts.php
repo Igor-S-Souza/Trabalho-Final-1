@@ -18,3 +18,8 @@ function newPopup(texto){
 
 }
 </script>
+
+<script type="text/javascript">
+
+
+</script>

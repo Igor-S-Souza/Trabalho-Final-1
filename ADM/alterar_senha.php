@@ -1,5 +1,6 @@
 <?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
+include ("../CSS/scripts.php")
 
 $id = $_GET['id'];
  ?>
@@ -17,9 +18,10 @@ $id = $_GET['id'];
 	<form method="POST" action="alterando_senha_usuario.php?id=<?php echo $id;?>">
     <br>
     <br>
-		<label class="titulo_senha">NOVA SENHA:</label><br><br>
+    <br>
+		<label class="titulo_senha">NOVA SENHA:</label>
 		<input type="password" class="input_alteracao" name="senha" placeholder="   defina uma nova senha"><br><br><br>
-		<label class="titulo_senha">CONFIRME:</label><br><br>
+		<label class="titulo_senha">CONFIRME:</label>
 	  <input type="password" class="input_alteracao" name="conf_senha" placeholder="   confirme a nova senha"><br><br><br>
 		<input type="submit" class="submit_senha" name="enviar">
 	</form>

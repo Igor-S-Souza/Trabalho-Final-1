@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
  ?>
 <!DOCTYPE html>
@@ -15,7 +15,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 
     <center>
     <div class="div_nome_empresa">
-      <br>  
+      <br>
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
     </div>
@@ -67,7 +67,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <?php } ?>
 
     </table>
-</center> 
+</center>
 </div>
 
   </body>

@@ -36,7 +36,7 @@ include("../BANCO/conexao.php");
       </tr>
 
       <?php
-        $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where setor='RH' ");
+        $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where setor='$setor' ");
         WHILE($campo = mysqli_fetch_array($selecionando)){
               $nome = $campo['nome'];
               $setor = $campo['setor'];

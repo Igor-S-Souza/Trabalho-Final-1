@@ -42,9 +42,7 @@ include ("../CSS/scripts.php")
     <center>
     <br>
     <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
-    <br>
-    <br>
-
+    <div class="div_tabela_andamento">
     <table class="tabela">
 
       <tr class="tr">
@@ -86,6 +84,7 @@ include ("../CSS/scripts.php")
     <?php } ?>
 
     </table>
+  </div>
 </center>
 </div>
 
