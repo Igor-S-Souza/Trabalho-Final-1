@@ -60,7 +60,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         <td class="td2"><?php echo $setor; ?></td>
         <td class="td2"><?php echo $problema; ?></td>
         <td class="td2"><?php echo $recepcao; ?></td>
-        <td class="td2"><a href="finalizar_chamado.php?id=<?php echo $id ?>"><img src="../IMAGENS/finalizar.svg" class="finalizar_img"></a></td>
+        <td class="td2"><a href="finalizar_chamado.php?id=<?php echo $id ?>"><img src="../IMAGENS/finalizar_chamado.svg" class="finalizar_img"></a></td>
         </tr>
 
         <?php } ?>
