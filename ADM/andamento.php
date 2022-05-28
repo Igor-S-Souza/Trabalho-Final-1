@@ -14,11 +14,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
   <body class="corpo">
 
     <center>
-    <div class="div_nome_empresa">
+<!--     <div class="div_nome_empresa">
       <br>  
       <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
       <br>
-    </div>
+    </div> -->
       <div id>
     <?php
         //Mensagem solicitação su
@@ -43,7 +43,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
     <br>
     <br>
-
+    <div class="div_tabela_andamento">
     <table class="tabela">
 
       <tr class="tr">
@@ -85,6 +85,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <?php } ?>
 
     </table>
+  </div>
 </center> 
 </div>
 

@@ -15,18 +15,18 @@ include("../BANCO/conexao.php");
 <body class="corpo">
 
     <center>
-      <div class="div_nome_empresa">
+<!--       <div class="div_nome_empresa">
         <br>  
         <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
         <br>
-      </div>
+      </div> -->
     </center>
 
     <center>
 
     <h2> Contatos </h2> 
     <br>
-
+<div class="div_tabela_andamento">
 <table class="tabela">
 
       <tr class="tr">
@@ -49,6 +49,7 @@ include("../BANCO/conexao.php");
       </tr>
      <?php   } ?>
 </table>
+</div>
 </center>
 </div>
 </body>
