@@ -52,7 +52,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         $recepcao =  $campo['recepcao'];
 
          ?>
-        <tr class="tr2">
+        <tr class="tr2" onclick="document.location='solicitaçoes_status.php?id=<?php echo $id ?>'">
         <td class="td2"><?php echo $protocolo; ?></td>
         <td class="td2"><?php echo $data; ?></td>
         <td class="td2"><?php echo $horario; ?></td>

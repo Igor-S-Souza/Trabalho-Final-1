@@ -404,3 +404,32 @@ background: #2e9dd8;
 	width: 45px;
 	height: 45px;
 }
+.recibo5 {
+    background-color: #E6E6FA;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 1%/1%;
+    font-size: medium;
+    box-shadow: 0 0.28em 0.28em 0.01em rgba(0, 0, 0, .2);
+    width: 50%;
+    margin: 5% auto auto auto;
+    word-wrap: break-word;
+}
+/*a linha */
+
+.font_subilhado{
+	font-family: 'Rubik', sans-serif;
+	font-size: 21px;
+	font-weight: normal;
+	border-bottom:1px black solid;
+	box-shadow: 0 0.02em 0.02em 0 rgba(0, 0, 0, .2);
+	width: 80%;
+	margin-left: 81px;
+	padding-top: 3%;
+	margin: auto auto auto auto;
+}
+.font1{
+	text-shadow: 0 0.1em 0.1em 0.01em rgba(0, 0, 0, .2);
+}
+.b{
+	margin-left: -2%;
+}
