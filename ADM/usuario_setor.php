@@ -76,7 +76,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 			<a href="excluir_usuario.php?id=<?php echo $id; ?>"><img src="../IMAGENS/lixeira_fechada.png" class="lixeira"></i></a>
 		</td>
 		<td class="td_atualizar_senha">
-			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>"><img src="https://request.br.ironmountain.com/refiwebMvc/Images/password.png" class="imagem_cadeado"></a>
+			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>"><img src="../IMAGENS/password.png" class="imagem_cadeado"></a>
 		</td>
 	</tr>
 	<?php } ?>

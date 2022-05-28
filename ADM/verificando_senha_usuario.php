@@ -1,6 +1,7 @@
 <?php 
 //incluindo o banco de dados do site
 include('../BANCO/conexao.php');
+include('../DADOS_USUARIO/dados_de_usuario.php');
 
 //recebendo o id do usuário
 $id = $_GET['id'];
@@ -9,7 +10,7 @@ $id = $_GET['id'];
 $senha = $_POST['senha'];
 
 //selecionando a senha do usuário e armazenando
-$selecionando = mysqli_query($conexao, "SELECT senha FROM usuario_por_setor WHERE id = '$id'");
+$selecionando = mysqli_query($conexao, "SELECT senha FROM usuario_por_setor WHERE id = '$id_de_usuario'");
 while ($campo = mysqli_fetch_array($selecionando)) {
  	$senha2 = $campo['senha'];
 

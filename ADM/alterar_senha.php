@@ -1,6 +1,6 @@
 <?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
-include ("../CSS/scripts.php")
+include ("../CSS/scripts.php");
 
 $id = $_GET['id'];
  ?>
