@@ -338,9 +338,10 @@ img{
     box-shadow: 0 1px 10px 1px black;
 }
 .finalizar_img{
-	margin-left: 2vh;
-	height: 9vh;
-	width: 9vh;
+	margin-top: 0vh;
+	margin-left: 7.5vh;
+	height: 7vh;
+	width: 7vh;
 }
 ::-webkit-scrollbar {
 width:10px;
