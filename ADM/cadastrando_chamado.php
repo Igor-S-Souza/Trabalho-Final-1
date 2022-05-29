@@ -29,7 +29,7 @@ while ($campo = mysqli_fetch_array($selecionando)) {
 $inserindo = mysqli_query($conexao, "INSERT INTO solicitacao (nome, setor, recepcao, problema, horario, protocolo, contato, data1) VALUES ('$nome', '$setor', 'Aguardando técnico...', '$solicitacao', '$hora', '$protocolo','$contato','$data')");
 
 ////inserindo o chamado e as informações do usuário na tabela de status1
-$inserindo2 = mysqli_query($conexao,"INSERT INTO status1 (protocolo,data4,horario4,nome4,contato4,setor,problema,recepcao,status) values ('$protocolo', '$data', '$hora','$nome','$contato','$setor', '$solicitacao','Aguardando técnico...','Em andamento...')");
+$inserindo2 = mysqli_query($conexao,"INSERT INTO status1 (protocolo,data4,horario4,nome4,contato4,setor,problema,recepcao,status) values ('$protocolo', '$data', '$hora','$nome','$contato','$setor', '$solicitacao','Aguardando técnico...','Em espera...')");
 }
 //Caso não receba o chamado
 //caso tenha inserido os dados na tabela de solicitação

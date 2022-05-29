@@ -8,7 +8,7 @@
       
       //Recebendo e armazenando a identificação da solicitação 
       $id = $_GET['id'];
-      
+      $nome_user = $_SESSION['nome_do_usuario'];
       //Selecionando a solicitaçao na tabela de solicitaçao
       $seleciona=mysqli_query($conexao, "SELECT * FROM solicitacao WHERE  id_solicitacao = '$id' "); 
          while($campo=mysqli_fetch_array($seleciona)){ 
@@ -24,7 +24,9 @@
          }
 
         //Atualizando status da solicitação no banco de dados
-        mysqli_query($conexao, "UPDATE status1 SET status='Em andamento' WHERE  id='$id' ")
+        mysqli_query($conexao, "UPDATE status1 SET status='Em andamento' WHERE  id='$id' ");
+        mysqli_query($conexao, "UPDATE status1 SET recepcao='$nome_user' WHERE  id='$id' "); 
+        mysqli_query($conexao, "UPDATE solicitacao SET recepcao='$nome_user' WHERE  id_solicitacao='$id' ");        
       ?>
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
