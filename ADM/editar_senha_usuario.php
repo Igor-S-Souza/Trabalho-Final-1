@@ -20,7 +20,7 @@ $id = $_GET['id'];
   <br>
   <br>
   <label class="titulo_senha">SENHA ATUAL:</label><br>
-  <input type="password" class="input_senha" name="senha" placeholder="         Valide sua senha"><br><br><br><br>
+  <input type="password" class="input_senha" name="senha" placeholder="         Valide sua senha" required><br><br><br><br>
   <input type="submit" class="submit_senha" name="enviar">
 </form>
 </div>
