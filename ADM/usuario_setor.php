@@ -20,13 +20,13 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         <br>
 	</div> -->
 	<br>
-	<div class="div_add_use">
-		<a href="adicionar_usuario_setor.php"><div class="div_icone_"><img src="../IMAGENS/adicionar_usuario.png" class="imagem_adicionar_usuario"> </div></a>
-	</div>
 	<br>
 	<br>
 	<h2>USUÁRIOS</h2>
 	</center>
+		<div>
+			<a href="adicionar_usuario_setor.php"><img src="../IMAGENS/adicionar_usuario.png" class="imagem_adicionar_usuario"></a>
+		</div>
 <div class="">
 <center>
 <div class="div_tabela_andamento">
