@@ -1,4 +1,5 @@
-<?php 
+<?php
+include ("../DADOS_USUARIO/dados_de_usuario.php");
 //incluindo o banco de dados do site
 include('../BANCO/conexao.php');
 
