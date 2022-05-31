@@ -179,18 +179,28 @@ a{
 
 	color: inherit;
 }
+
+.imagem_adicionar_usuario {
+	float: right;
+	height: 43px;
+	width: 43px;
+	margin-top: 110px;
+	margin-right: 63px;
+}
+
 .div_add_user{
 	float: right;
-	width: 40px;
-	height: 40px;
+	width: 20px;
+	height: 20px;
 	background-color: white;
 	border: 1px solid;
 	border-radius: 60px;
+	margin-top: 100px;
 	margin-right: 40px;
 }
 .div_icone_2{
 	margin-top: 10px;
-	font-size: 20px;
+	font-size: 10px;
 }
 .magica{
 	background-color: #2191d0;
@@ -432,4 +442,37 @@ background: #2e9dd8;
 }
 .b{
 	margin-left: -2%;
+}
+.criar_usuario {
+	float: center
+	height: 7.7vh;
+	width: 40vh;
+	margin-top: 6px;
+	background-color: #E6E6FA;
+	border:none;
+	color: #2191d0;
+	text-decoration-color: #2191d0;
+	font-size: 3vh;
+	font-family: sans-serif;
+}
+.botao_criar_usuario {
+	background-color: #2191d0;
+	border-radius: 5px;
+	border: none;
+	color: white;
+	height: 40px;
+	width: 41vh;
+	font-family: sans-serif;
+}
+.div_adicionar_usuario {
+	margin-top: 20vh;
+	width: 50vh;
+	height: 50vh;
+	background-color: #F0F8FF;
+	position: relative;
+}
+.textos_criar_usuario {
+	color: #2191d0;
+	font-family: sans-serif;
+	font-size: 20px;
 }

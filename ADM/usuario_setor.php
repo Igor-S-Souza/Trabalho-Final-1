@@ -20,8 +20,8 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         <br>
 	</div> -->
 	<br>
-	<div class="div_add_user">
-		<a href="adicionar_usuario_setor.php"><div class="div_icone_2"><i class="fa-solid fa-user-plus"></i></div></a>
+	<div class="div_add_use">
+		<a href="adicionar_usuario_setor.php"><div class="div_icone_"><img src="../IMAGENS/adicionar_usuario.png" class="imagem_adicionar_usuario"> </div></a>
 	</div>
 	<br>
 	<br>
