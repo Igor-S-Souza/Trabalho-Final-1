@@ -16,6 +16,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <title>andamento</title>
   </head>
   <body class="corpo">
+  <a href="chamados_finalizados.php">finalizados</a>
 
     <!--<center>
       <div class="div_nome_empresa">
@@ -27,7 +28,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <div>
     <center>
     <br>
-    <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
+    <h2 id=h1>SOLICITAÇÕES </h2>
    <center>
 
     <div class="div_tabela_andamento">
@@ -41,7 +42,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
           <td class="td">SETOR</td>
           <td class="td">PROBLEMA</td>
           <td class="td">RECEPÇÃO</td>
-          <td class="td">FINALIZAR</td>
         </tr>
 
         <?php
@@ -65,7 +65,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         <td class="td2"><?php echo $setor; ?></td>
         <td class="td2"><?php echo $problema; ?></td>
         <td class="td2"><?php echo $recepcao; ?></td>
-        <td class="td2"><a href="finalizar_chamado.php?id=<?php echo $id ?>"><img src="../IMAGENS/finalizar_chamado.svg" class="finalizar_img"></a></td>
         </tr>
 
         <?php } ?>
