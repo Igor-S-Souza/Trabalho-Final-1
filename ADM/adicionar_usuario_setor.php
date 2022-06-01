@@ -11,6 +11,8 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 </head>
 <body class="corpo">
 	<center>
+		<br>
+		<br>
 		<h2>ADICIONAR USUÁRIO </h2>
 <div class="div_adicionar_usuario">
 	<form method="POST" action="adicionando_usuario_setor.php">
@@ -19,7 +21,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		<label class="textos_criar_usuario">Nome</label><br>
 		<input type="text" name="nome" placeholder="Informe o nome" class="criar_usuario"><br>
 		<label class="textos_criar_usuario" >Setor</label><br>
-		<select name="setor" required="required">
+		<select name="setor" required="required" class="select_css">
 			<optgroup label="Setores">
 				<option>ADM</option>
 				<option>RH</option>
