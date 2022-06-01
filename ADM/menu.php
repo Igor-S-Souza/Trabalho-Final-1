@@ -28,6 +28,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
        ?>
     </center>
     <center>
+      <a href="teste2.php">teste</a>
       <br> 
       <br>  
       <br>  

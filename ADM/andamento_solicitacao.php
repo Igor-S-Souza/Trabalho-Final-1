@@ -9,6 +9,10 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     ?>
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
+
+    <script type="text/javascript" src="../biblioteca/jquery-2.2.3;min.js"></script>
+    <script type="text/javascript" src="../biblioteca/jquery-1.9.1.min.js"></script>
+    <?php include('../CSS/scripts.php'); ?>
     <title>andamento</title>
   </head>
   <body class="corpo">
@@ -24,7 +28,8 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <center>
     <br>
     <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
-   
+   <center>
+
     <div class="div_tabela_andamento">
       <table class="tabela">
 

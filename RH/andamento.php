@@ -89,4 +89,16 @@ include ("../CSS/scripts.php")
 </div>
 
   </body>
+<script type="text/javascript">
+var btn = document.getElementById('btn-div');
+var container = document.querySelector('.more');
+btn.addEventListener('click', function() {
+    
+  if(container.style.display === 'none') {
+      container.style.display = 'block';
+  } else {
+      container.style.display = 'none';
+  }
+});
+</script>
 </html>
