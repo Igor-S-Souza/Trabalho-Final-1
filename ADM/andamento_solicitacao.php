@@ -23,7 +23,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <div>
     <center>
     <br>
-    <h2 id=h1 style=" margin-left: -80%; margin-bottom:  -2%; margin-top:  4%;">SOLICITAÇÕES: </h2>
+    <h2 id=h1 style=" margin-left: -75%; margin-bottom:  -2%; margin-top:  4%;">SOLICITAÇÕES: </h2>
    <center>
     <div class="form-pesquisa">
       <div method="POST" id="form-pesquisa" class="barra_pesquisa" action="">

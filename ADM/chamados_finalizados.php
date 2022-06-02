@@ -47,7 +47,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       <center> 
 <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -1% ; margin-bottom: -6%;"></a>
 </center>
-    <h2 id=h1 style=" margin-left: -73%; margin-bottom:  -2%; margin-top:  4%;"> CHAMADOS FINALIZADOS: </h2>
+    <h2 id=h1 style=" margin-left: -66%; margin-bottom:  -2%; margin-top:  4%;"> CHAMADOS FINALIZADOS: </h2>
     <div class="form-pesquisa">
       <div method="POST" id="form-pesquisa" class="barra_pesquisa" action="">
         <img src="../IMAGENS/lupa.svg" style="width:10%; cursor: pointer; height: 7vh; margin-top: -0.5%;">
