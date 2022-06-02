@@ -11,6 +11,12 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	<script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
 	<title></title>
 </head>
+<?php
+
+  $nomepesquisa=$_POST['nome'];
+  $setorpesquisa=$_POST['setor'];
+
+ ?>
 <body class="corpo">
   <center>
       <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-bottom: -3% ;"></a>
@@ -21,6 +27,12 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
   <br>
 	</center>
 	<center>
+    <form class="" action="usuario_setor.php" method="post">
+      <label class="">PESQUISAR:</label>
+      <input type="text" name="nome" value="" placeholder="nome">
+      <input type="text" name="setor" value="" placeholder="setor">
+      <input type="submit" name="buscar" value="buscar">
+    </form>
 	<h2 style="margin-left:5.5%; margin-bottom: -2%; float: left;" >USUÁRIOS:</h2>
 	</center>
 <div class="">
@@ -47,14 +59,24 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 			ATUALIZAR SENHA
 		</td> -->
 	</tr>
-<?php
-	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where SETOR = '$setor' ORDER BY id");
-	WHILE($campo = mysqli_fetch_array($selecionando)){
-		 $id = $campo['id'];
-		 $nome = $campo['nome'];
-		 $setor = $campo ['setor'];
-		 $login = $campo['login'];
- ?>
+  <?php
+  if (($nomepesquisa !='') && ($setorpesquisa !='')){
+    $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where nome='".$nomepesquisa."' and setor ='".
+     $setorpesquisa . "' ORDER BY id");
+  }elseif ($nomepesquisa !='') {
+    $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where nome='".$nomepesquisa."' ORDER BY id");
+  }elseif ($setorpesquisa !='') {
+    $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where setor='".$setorpesquisa."' ORDER BY id");
+  }else{
+    	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor ORDER BY id");
+  }
+
+  	WHILE($campo = mysqli_fetch_array($selecionando)){
+  		 $id = $campo['id'];
+  		 $nome = $campo['nome'];
+  		 $setor = $campo ['setor'];
+  		 $login = $campo['login'];
+   ?>
 	<tr class="tr2">
 		<td class="td2">
 			<?php echo $nome; ?>
