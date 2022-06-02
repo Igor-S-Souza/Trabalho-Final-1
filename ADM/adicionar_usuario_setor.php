@@ -11,9 +11,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 </head>
 <body class="corpo">
 	<center>
+		 <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -5%;"></a>
 		<br>
 		<br>
-		<h2>ADICIONAR USUÁRIO </h2>
+		<br>
+		<h2 style="margin-bottom: -4%; margin-top: 5%;">ADICIONAR USUÁRIO: </h2>
 <div class="div_adicionar_usuario">
 	<form method="POST" action="adicionando_usuario_setor.php">
 		<label class="textos_criar_usuario">Login</label><br>

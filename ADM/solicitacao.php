@@ -11,11 +11,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 <body class="corpo">
 
   <center>
-<!--   <div class="div_nome_empresa">
-      <br>
-      <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-      <br>
-  </div> -->
+ <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -3%;"></a>
   </center>
   <center>
      <br>

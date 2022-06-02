@@ -37,10 +37,12 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
   </div>
 
     </center>
-    <div>
+    <center>
+    <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -3%;"></a>
+    </center>
     <center>
     <br>
-    <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
+    <h2 id=h1 style="margin-left: -65%; margin-bottom:-6%; margin-top: 3%;"> ANDAMENTO DAS SOLICITAÇÕES: </h2>
     <br>
     <br>
     <div class="div_tabela_andamento">

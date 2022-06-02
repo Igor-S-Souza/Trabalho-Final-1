@@ -15,16 +15,12 @@ include("../BANCO/conexao.php");
 <body class="corpo">
 
     <center>
-<!--       <div class="div_nome_empresa">
-        <br>  
-        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-        <br>
-      </div> -->
+    <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -5%;"></a>
     </center>
 
     <center>
 
-    <h2> Contatos </h2> 
+    <h2 style="margin-left:-80%; margin-bottom:-5%; margin-top: 5%;"> CONTATOS: </h2> 
     <br>
 <div class="div_tabela_andamento">
 <table class="tabela">

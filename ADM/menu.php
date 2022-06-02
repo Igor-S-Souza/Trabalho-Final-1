@@ -11,13 +11,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <title>Menu Inicial</title>
 </head>
     <body class="corpo">
-    <center>
-<!--       <div class="div_nome_empresa"> -->
-<!--         <br>  
-        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-        <br> -->
-<!--       </div> -->
-<!-- <hr class="linha"> -->
       <?php 
         //Mensagem login em branco
       if(isset($_SESSION['msg_de_bem_vindo'])){
@@ -26,12 +19,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
           unset($_SESSION['msg_de_bem_vindo']);
       }
        ?>
-    </center>
     <center>
-      <a href="teste2.php">teste</a>
-      <br> 
-      <br>  
-      <br>  
+        <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-bottom: -5% ;"></a>
+        <br>  
+    </center>
+    <center> 
       <div class="div_menu_maior"> 
       <table>
       <tr>

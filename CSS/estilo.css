@@ -309,7 +309,7 @@ img{
 .div_solicitacao{
 	margin-top: 5vh;
 	background-color: white;
-	height: 80vh;
+	height: 75vh;
 	width: 70vh;
 }
 .area_solicitacao{
@@ -680,4 +680,16 @@ background: #2e9dd8;
     margin-top: 10%;
     margin-bottom: -15%;
     margin-left: -155%;
+}
+.fundo_logo{
+	position: 	fixed;
+	background-color: white;
+	width: 	128px;
+	height: 122px;
+	border-radius: 50%;
+	margin-top: -89%;
+}
+.funciona_logo{
+	width: 	10%;
+	height: 200px;
 }
