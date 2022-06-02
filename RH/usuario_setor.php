@@ -23,6 +23,13 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 
 	<br>
 	<br> -->
+  <center>
+      <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-bottom: -3% ;"></a>
+      <br>
+  </center>
+  <br>
+  <br>
+  <br>
 	<h2>USUÁRIOS</h2>
 	</center>
 <div class="">

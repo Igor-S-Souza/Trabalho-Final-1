@@ -1,24 +1,40 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
  ?>
 <!DOCTYPE html>
 <html>
 <head>
-	<?php include ('../BANCO/conexao.php'); ?>
+	<?php include ('../BANCO/conexao.php');
+
+  ?>
+
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="../CSS/estilo.css">
 	<script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
 	<title></title>
 </head>
+<?php
+
+  $nomepesquisa=$_POST['nome'];
+  $setorpesquisa=$_POST['setor'];
+
+ ?>
 <body class="corpo">
 
 	<center>
-<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  1% "></a>
+<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-top:  1% "></a>
 	<br>
 	<br>
 	</center>
 	<h2 style="margin-left:5.5%; margin-bottom: -5%;" >USUÁRIOS:</h2>
+
+  <form class="" action="usuario_setor.php" method="post">
+    <label class="">PESQUISAR:</label>
+    <input type="text" name="nome" value="" placeholder="nome">
+    <input type="text" name="setor" value="" placeholder="setor">
+    <input type="submit" name="buscar" value="buscar">
+  </form>
 
 		<div>
 			<a href="adicionar_usuario_setor.php"><img src="../IMAGENS/adicionar_usuario.png" class="imagem_adicionar_usuario"></a>
@@ -32,7 +48,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 			NOME
 		</td>
 		<td class="td">
-			SETOR	
+			SETOR
 		</td>
 		<td class="td">
 			USUÁRIO
@@ -47,8 +63,18 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 			ATUALIZAR SENHA
 		</td>
 	</tr>
-<?php 
-	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor ORDER BY id");
+<?php
+if (($nomepesquisa !='') && ($setorpesquisa !='')){
+  $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where nome='".$nomepesquisa."' and setor ='".
+   $setorpesquisa . "' ORDER BY id");
+}elseif ($nomepesquisa !='') {
+  $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where nome='".$nomepesquisa."' ORDER BY id");
+}elseif ($setorpesquisa !='') {
+  $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where setor='".$setorpesquisa."' ORDER BY id");
+}else{
+  	$selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor ORDER BY id");
+}
+
 	WHILE($campo = mysqli_fetch_array($selecionando)){
 		 $id = $campo['id'];
 		 $nome = $campo['nome'];
