@@ -30,10 +30,10 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <br>
     <h2 id=h1>SOLICITAÇÕES </h2>
    <center>
-
+    <input type="text" class="input-search" alt="tabela" placeholder="Buscar nesta lista" />
     <div class="div_tabela_andamento">
-      <table class="tabela">
-
+      <table class="tabela" id="tabela">
+        <thead>
         <tr class="tr">
           <td class="td">PROTOCOLO</td>
           <td class="td">DATA</td>
@@ -43,7 +43,8 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
           <td class="td">PROBLEMA</td>
           <td class="td">RECEPÇÃO</td>
         </tr>
-
+        </thead>
+        <tbody>
         <?php
         $select = mysqli_query ($conexao,"SELECT * FROM solicitacao ORDER BY id_solicitacao");
         while ($campo = mysqli_fetch_array($select)){
@@ -68,7 +69,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
         </tr>
 
         <?php } ?>
-
+        </tbody>
     </table>
   </div>
 </center>

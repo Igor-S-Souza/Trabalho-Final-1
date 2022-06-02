@@ -21,12 +21,11 @@
             $setor = $campo['setor'];
             $problema = $campo['problema'];
             $recepçao = $campo['recepcao'];
-         }
-
-        //Atualizando status da solicitação no banco de dados
-        mysqli_query($conexao, "UPDATE status1 SET status='Em andamento' WHERE  id='$id' ");
-        mysqli_query($conexao, "UPDATE status1 SET recepcao='$nome_user' WHERE  id='$id' "); 
-        mysqli_query($conexao, "UPDATE solicitacao SET recepcao='$nome_user' WHERE  id_solicitacao='$id' ");        
+    //Atualizando status da solicitação no banco de dados
+    $teste1 = mysqli_query($conexao, "UPDATE status1 SET status='Em andamento' WHERE  protocolo='$protocolo' ");
+    $teste2 =mysqli_query($conexao, "UPDATE status1 SET recepcao='$nome_user' WHERE  protocolo='$protocolo' "); 
+    $teste3 =mysqli_query($conexao, "UPDATE solicitacao SET recepcao='$nome_user' WHERE  protocolo='$protocolo' ");
+         }        
       ?>
 <head>
     <link rel="stylesheet" type="text/css" href="../CSS/estilo.css">

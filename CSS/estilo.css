@@ -91,7 +91,14 @@
   border: none;
   border-spacing: 1;
   z-index: 5;
+  min-height: 50px;
+}
+.tabela_busca{
   width: 100%;
+  top: -5px;
+  border: none;
+  border-spacing: 1;
+  z-index: 5;
   min-height: 50px;
 }
 
@@ -121,6 +128,7 @@
 
 }
 .tr2{
+	width: 100%;
 	font-family: sans-serif;
     border: 1px solid black;
 }
@@ -479,4 +487,172 @@ background: #2e9dd8;
 	width: 46.3vh;
 	background-color: #E6E6FA;
 	border: none;
+}
+}
+.grid {
+    font-size: 15px;
+}
+.grid_meus_chamados {
+    font-size: 16px;
+    border-radius: 0.5vh;
+    width: 80%;
+    height: auto;
+    overflow: scroll;
+    font-family: 'Rubik', sans-serif;
+    box-shadow: 0 1px 10px 1px black;
+    scroll-behavior: smooth;
+}
+.grid_meus_chamados::-webkit-scrollbar {
+    width: 0px;
+    height: 0px;
+}
+.grid_meus_chamados {
+    scrollbar-width: none;
+    scrollbar-color: #f5831b #d6d5d5;
+}
+.lista_meus_chamados {
+    overflow-y: auto;
+    height: 70vh;
+    background-color: #d6d5d5;
+}
+.lista_meus_chamados::-webkit-scrollbar-track {
+	background:#333;
+}
+
+
+/* Handle */
+
+.lista_meus_chamados::-webkit-scrollbar-thumb {
+    background: #2e9dd8;
+    border-radius: 4vh;
+}
+
+
+/* Handle on hover */
+
+.lista_meus_chamados::-webkit-scrollbar-thumb:hover {
+    background: #0000CD;
+}
+
+.lista_meus_chamados {
+    scrollbar-color: #f5831b;
+}
+.tabela_andamento {
+    border-radius: 20px;
+    width: 100%;
+    table-layout: fixed;
+}
+.corpotabela,
+.headertabela {
+    color: #000;
+}
+#t1 center::-webkit-scrollbar {
+    width: 10px;
+}
+
+
+/* Track */
+
+#t1 center::-webkit-scrollbar-track {
+    background: #d6d5d554;
+}
+
+
+/* Handle */
+
+#t1 center::-webkit-scrollbar-thumb {
+    background-color: #74af574a;
+    border-radius: 4vh;
+}
+
+
+/* Handle on hover */
+
+#t1 center::-webkit-scrollbar-thumb:hover {
+    background: #74af57;
+}
+
+#t1 center {
+    scrollbar-color: #f5841b3d;
+}
+
+#t1 center {
+    padding: 5%;
+    display: flex;
+    word-wrap: break-word;
+    align-items: center;
+    height: 150px;
+    overflow-y: scroll;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: flex-start;
+    word-wrap: break-word;
+    align-content: space-between;
+}
+.linha2 {
+    align-items: center;
+    font-size: medium;
+    height: 18vh;
+    overflow: hidden;
+    min-height: 120px;
+    display: grid;
+    grid-template-columns: 2fr 0.7fr 0.5fr 0.7fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+
+.linha3 {
+    word-break: break-word;
+    align-items: center;
+    font-size: medium;
+    overflow: hidden;
+    grid-template-columns: 0.7fr 0.7fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+}
+.desktop>p {
+    display: none;
+}
+
+.desktop>a {
+    display: none;
+}
+.headertabela_chamados {
+    background-color: #2191d0;
+    border-top: 1.5px solid rgb(247, 247, 247);
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: large;
+    font-weight: normal;
+    height: 2vw;
+    max-height: 45px;
+    min-height: 45px;
+    padding-top: 3%;
+}
+.solicitaçoes_feitas_aba {
+    font-size: larger;
+    height: 4vw;
+    padding-top: 1.2vh;
+    max-height: 45px;
+    min-height: 45px;
+    color: #3D3C3C;
+    background-color: #74af57;
+    font-weight: bold;
+}
+
+.solicitaçoes_espera_aba {
+    font-size: larger;
+    font-weight: bold;
+    height: 4vw;
+    padding-top: 1.2vh;
+    max-height: 45px;
+    min-height: 45px;
+    color: #3D3C3C;
+    background-color: #F0D766;
+}
+.gridaa{
+	grid: none;
+	position: relative;
+	margin-left: 40%;
+	font-size: 3vh;
 }

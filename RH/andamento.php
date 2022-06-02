@@ -1,6 +1,5 @@
-<?php
+<?php 
 include ("../DADOS_USUARIO/dados_de_usuario.php");
-include ("../CSS/scripts.php")
  ?>
 <!DOCTYPE html>
 <html>
@@ -13,14 +12,8 @@ include ("../CSS/scripts.php")
     <title>andamento</title>
   </head>
   <body class="corpo">
-
     <center>
-    <!-- <div class="div_nome_empresa">
-      <br>
-      <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-      <br>
-    </div>
-      <div id> -->
+      <div id>
     <?php
         //Mensagem solicitação su
     if(isset($_SESSION['msg_chamado_sucesso'])){
@@ -34,59 +27,136 @@ include ("../CSS/scripts.php")
         //Parando sessão
         unset($_SESSION['msg_chamado_erro']);
     }
-     ?>
-  </div>
-
-    </center>
-    <div>
-    <center>
-    <br>
-    <h2 id=h1> ANDAMENTO DAS SOLICITAÇÕES </h2>
-    <div class="div_tabela_andamento">
-    <table class="tabela">
-
-      <tr class="tr">
-        <td class="td">PROTOCOLO</td>
-        <td class="td">DATA</td>
-        <td class="td">HORA</td>
-        <td class="td">NOME</td>
-        <td class="td">SETOR</td>
-        <td class="td">PROBLEMA</td>
-        <td class="td">RECEPÇÃO</td>
-        <td class="td">STATUS</td>
-      </tr>
-
-      <?php
-      $select = mysqli_query ($conexao,
-      "SELECT * FROM status1 order by id LIMIT 5");
-      while ($campo = mysqli_fetch_array($select)) {
-      $protocolo =  $campo['protocolo'];
-      $data =  $campo['data4'];
-      $horario =  $campo['horario4'];
-      $nome =  $campo['nome4'];
-      $setor = $campo ['setor'];
-      $problema =  $campo['problema'];
-      $recepcao =  $campo['recepcao'];
-      $status =  $campo['status'];
-
-       ?>
-      <tr class="tr2">
-      <td class="td2"><?php echo $protocolo ?></td>
-      <td class="td2"><?php echo $data ?></td>
-      <td class="td2"><?php echo $horario ?></td>
-      <td class="td2"><?php echo $nome ?></td>
-      <td class="td2"><?php echo $setor ?></td>
-      <td class="td2"><?php echo $problema ?></a></td>
-      <td class="td2"><?php echo $recepcao ?></td>
-      <td class="td2"><?php echo $status?></td>
-      </tr>
-
-    <?php } ?>
-
-    </table>
-  </di>
-</center>
+     ?> 
 </div>
+<br>
+<h1 class="font_titulos2">Meus chamados</h1>
+<br>
+<div class="grid" style="width: 100%;">
+    <div class="desktop">
+      <div class="grid_meus_chamados">
+        <div class="lista_meus_chamados">
+          <table class="tabela_andamento">
+            <div class="solicitaçoes_espera_aba">
+              Chamados em andamento
+            </div>
+                <?php 
+                    //armazenando o nome do usuário 
+                     $nome = $_SESSION['nome_do_usuario'];
+                    //Buscando chamados em andamento do usuário
+                    $buscando=mysqli_query($conexao, "SELECT * FROM status1 WHERE nome4 = '$nome' ORDER BY id DESC");
+                    //Verificando se há solicitações
+                    $cont_solicitacoes = mysqli_num_rows($buscando);
+                    if ($cont_solicitacoes == "0") { 
+                       echo "<center>";
+                          echo "<div class='nao_a_chamados'>";
+                             echo "Não há chamados em aberto";
+                          echo "</div>";
+                       echo "</center>";
+                    }
+                    else {
 
-  </body>
+                    }
+                    while($campo=mysqli_fetch_array($buscando)){?>
+                <tr class="linha2">
+                     <td class="gridaa" id="">
+                           <strong style="font-size: 1.3em;"><?php echo $campo['protocolo']; ?></strong>
+                        <br>
+                   <?php echo $campo['problema']; ?>
+                    
+                  </td>
+                  <?php 
+                     if ($campo['status'] == "Em espera..." && $campo['recepcao'] == "Aguardando técnico...") { ?>
+                        <td class="corpotabela" id="t3">
+                           <center>
+                           <?php echo "Aguardando técnico" ?> 
+                           </center>
+                        </td>
+                  <?php 
+                     }
+                     else {
+                  ?>
+                     <td class="corpotabela" id="t3">
+                        <center>
+                           <?php echo $campo['status']; ?>
+                           <br>
+                           <strong>Por:</strong> <?php echo $campo['recepcao']; ?> 
+                        </center>
+                     </td>
+                  <?php
+                     }
+                  ?>
+                     <td class="corpotabela" id="t5">
+                        <center><strong></strong> <?php echo $campo['data4']; ?></center>
+                     </td>
+                     <td class="corpotabela" id="t7">
+                        <center>
+
+                           <a style="text-decoration: none;" href="verificaçao_cancelar_chamado.php?id_chamado=<?php echo $campo['protocolo']; ?>">
+                        <div class="botao_cancelar_meus_chamado">
+                           cancelar
+                        </div>
+                     </a>
+                        </center>
+                     </td>
+                  </tr>
+                  <?php  } //Finalizando o laço de repetição ?>
+                  </div>
+                  </table>
+
+               <div class="solicitaçoes_feitas_aba">
+                  Chamados finalizados
+               </div>
+
+               <table border="1" class="tabela">
+<!--                   <tr class="linha3">
+
+                     <th class="headertabela_chamados">Protocolo</th>
+                     <th class="headertabela_chamados">Técnico</th>
+                     <th class="headertabela_chamados">Chamado</th>
+                     <th class="headertabela_chamados">Descrição</th>
+
+                  </tr> -->
+                  <?php
+                  //Buscando chamados finalizados do usuário
+                  $buscando_2 = mysqli_query($conexao, "SELECT * FROM saida_solicitacao WHERE nome = '$nome' ORDER BY protocolo DESC LIMIT 5");
+                  while ($campo_2 = mysqli_fetch_array($buscando_2)) {
+                  ?>
+
+                     <tr class="linha3">
+
+                        <td class="corpotabela" id="t1">
+                           <center>
+                              <strong><?php echo $campo_2['protocolo']; ?></strong>
+                              <br>
+                              <?php echo $campo_2['data']; ?>
+                           </center>
+                        </td>
+                        <td class="corpotabela" id="t1">
+                           <center>
+                              <?php echo "Finalizado" ?>
+                              <br>
+                              <strong>Por:</strong>
+                              <?php echo $campo_2['recepcao']; ?>
+                           </center>
+                        </td>
+                        <td class="corpotabela" id="t1">
+                           <center><strong>Chamado:</strong>
+                              <?php echo $campo_2['problema']; ?>
+                           </center>
+                        </td>
+                        <td class="corpotabela" id="t1">
+                           <center><strong>Solução:</strong>
+                              <?php echo $campo_2['solucao']; ?>
+                           </center>
+                        </td>
+                     </tr>
+                  <?php  } //Finalizando o laço de repetição 
+                  ?>
+               </table>
+   </center>
+   </div>
+   </div>
+</center> 
+</body>
 </html>

@@ -20,23 +20,21 @@ function newPopup(texto){
 </script>
 
 <script type="text/javascript">
-var table = $(".tabela2 tbody").find("tr");
-var mensagem = $("#mensagem");
-$("#pesquisa").keyup(function() {
-  _this = this;
-  flag = table.length;
-  console.log(flag);
-  $.each(table, function() {
-    if ($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) == -1) {
-      $(this).hide();
-      flag--;
-    } else {
-      $(this).show();
+$(function(){
+    $(".input-search").keyup(function(){
+        //pega o css da tabela 
+        var tabela = $(this).attr('alt');
+        if( $(this).val() != ""){
+            $("."+tabela+" tbody>tr").hide();
+            $("."+tabela+" td:contains-ci('" + $(this).val() + "')").parent("tr").show();
+        } else{
+            $("."+tabela+" tbody>tr").show();
+        }
+    }); 
+});
+$.extend($.expr[":"], {
+    "contains-ci": function(elem, i, match, array) {
+        return (elem.textContent || elem.innerText || $(elem).text() || "").toLowerCase().indexOf((match[3] || "").toLowerCase()) >= 0;
     }
-  });
-  if (flag == 0)
-    $("#mensagem").html("<center><div class=''>Não foram encontrados resultados<div></center>");
-  else
-    $("#mensagem").html("");
 });
 </script>
