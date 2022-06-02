@@ -168,7 +168,7 @@
 }
 .div_menu_maior{
 	margin-top: 8%;
-	margin-bottom: 10%;
+	margin-bottom: 7%;
 	width: 85%;
 	height: 50vh;
 	background-color: white;
@@ -282,7 +282,7 @@ img{
 }
 .titulo_solicitacao{
 	color: #2191d0;
-	font-size: 8vh;
+	font-size: 6vh;
 	margin-top: 1vh;
 	margin-bottom: 6vh;
 	font-family: sans-serif;
@@ -309,13 +309,13 @@ img{
 .div_solicitacao{
 	margin-top: 5vh;
 	background-color: white;
-	height: 75vh;
+	height: 70vh;
 	width: 70vh;
 }
 .area_solicitacao{
   position:relative;
-  width:58.5vh;
-  height:40vh;
+  width:55vh;
+  height:35vh;
   background-color: #E6E6FA;
   font-family: sans-serif;
   border: none;

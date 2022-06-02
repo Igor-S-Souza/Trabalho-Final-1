@@ -16,14 +16,14 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <title>andamento</title>
   </head>
   <body class="corpo">
-<center> 
-<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -1% ; margin-bottom: -6%;"></a>
+  <a href="chamados_finalizados.php">finalizados</a>
+<center>
+<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-top:  -1% ; margin-bottom: -6%;"></a>
 </center>
     <div>
     <center>
     <br>
-    <h2 id=h1 style=" margin-left: -75%; margin-bottom:  -2%; margin-top:  4%;">SOLICITAÇÕES: </h2>
-    <a href="chamados_finalizados.php"><img src="../IMAGENS/finalizados.png" class="imagem_finalizados"></a>
+    <h2 id=h1 style=" margin-left: -80%; margin-bottom:  -2%; margin-top:  4%;">SOLICITAÇÕES: </h2>
    <center>
     <div class="form-pesquisa">
       <div method="POST" id="form-pesquisa" class="barra_pesquisa" action="">

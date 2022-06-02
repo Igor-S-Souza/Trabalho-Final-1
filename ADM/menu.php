@@ -1,4 +1,4 @@
-<?php 
+<?php
 include ("../DADOS_USUARIO/dados_de_usuario.php");
 ?>
 <!DOCTYPE html>
@@ -11,7 +11,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <title>Menu Inicial</title>
 </head>
     <body class="corpo">
-      <?php 
+      <?php
         //Mensagem login em branco
       if(isset($_SESSION['msg_de_bem_vindo'])){
           echo $_SESSION['msg_de_bem_vindo'];
@@ -20,11 +20,11 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
       }
        ?>
     <center>
-        <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-bottom: -5% ;"></a>
-        <br>  
+        <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-bottom: -5% ;"></a>
+        <br>
     </center>
-    <center> 
-      <div class="div_menu_maior"> 
+    <center>
+      <div class="div_menu_maior">
       <table>
       <tr>
           <td><div class="div_menu"><a href="solicitacao.php"><div class="div_icone"><img src="../IMAGENS/cronograma.svg"></div></a><div class="letra_div"><br>Abrir chamado</div></div></td>

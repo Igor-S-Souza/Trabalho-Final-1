@@ -10,7 +10,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 </head>
 <body class="corpo">
     <center>
- <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -3%;"></a>
+ <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :150px; margin-top:  -0.5% ; margin-bottom: -3%;"></a>
   </center>
   </center>
   <center>
