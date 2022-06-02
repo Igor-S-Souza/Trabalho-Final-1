@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="56.742" height="58.243" viewBox="0 0 56.742 58.243">
+  <defs>
+    <filter id="Linha_5" x="20.522" y="21.972" width="36.22" height="36.271" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Elipse_4" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+    </filter>
+    <filter id="Elipse_4-2" x="0" y="0" width="48" height="48" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="lupa" transform="translate(-4 -18.206)">
+    <g transform="matrix(1, 0, 0, 1, 4, 18.21)" filter="url(#Linha_5)">
+      <line id="Linha_5-2" data-name="Linha 5" x2="9.735" y2="9.786" transform="translate(33.76 32.21)" fill="rgba(0,0,0,0)" stroke="#f58500" stroke-linecap="round" stroke-width="6"/>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g transform="matrix(1, 0, 0, 1, 4, 18.21)" filter="url(#Elipse_4)">
+        <g id="Elipse_4-3" data-name="Elipse 4" transform="translate(9 6)" fill="none" stroke="#f58500" stroke-width="6">
+          <circle cx="15" cy="15" r="15" stroke="none"/>
+          <circle cx="15" cy="15" r="12" fill="none"/>
+        </g>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 4, 18.21)" filter="url(#Elipse_4-2)">
+        <circle id="Elipse_4-4" data-name="Elipse 4" cx="15" cy="15" r="15" transform="translate(9 6)" fill="#fff"/>
+      </g>
+      <g id="Elipse_4-5" data-name="Elipse 4" transform="translate(13 24.206)" fill="none" stroke="#f58500" stroke-width="6">
+        <circle cx="15" cy="15" r="15" stroke="none"/>
+        <circle cx="15" cy="15" r="12" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

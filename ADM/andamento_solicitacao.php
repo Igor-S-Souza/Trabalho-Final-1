@@ -30,7 +30,12 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     <br>
     <h2 id=h1>SOLICITAÇÕES </h2>
    <center>
-    <input type="text" class="input-search" alt="tabela" placeholder="Buscar nesta lista" />
+    <div class="form-pesquisa">
+      <div method="POST" id="form-pesquisa" class="barra_pesquisa" action="">
+        <img src="../IMAGENS/lupa.svg" style="width:10%; cursor: pointer; height: 7vh; margin-top: -0.5%;">
+        <input type="text" class="input-search" alt="tabela" placeholder="Buscar nesta lista" id="pesquisa"  />
+      </div>
+    </div>
     <div class="div_tabela_andamento">
       <table class="tabela" id="tabela">
         <thead>
