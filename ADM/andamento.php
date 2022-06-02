@@ -42,7 +42,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     </center>
     <center>
     <br>
-    <h2 id=h1 style="margin-left: -65%; margin-bottom:-6%; margin-top: 3%;"> ANDAMENTO DAS SOLICITAÇÕES: </h2>
+    <h2 id=h1 style="margin-left: -59%; margin-bottom:-6%; margin-top: 3%;"> ANDAMENTO DAS SOLICITAÇÕES: </h2>
     <br>
     <br>
     <div class="div_tabela_andamento">

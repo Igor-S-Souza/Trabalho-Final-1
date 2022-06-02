@@ -14,19 +14,14 @@ include("../BANCO/conexao.php");
 </head>
 <body class="corpo">
 
-    <!-- <center>
-      <div class="div_nome_empresa">
-        <br>
-        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-        <br>
-      </div>
-    </center> -->
+    <center>
+    <a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: 3%;"></a>
+    </center>
 
     <center>
 
-    <h2> Contatos </h2>
-    <br>
-
+    <h2 style="margin-left:5.5%; margin-bottom: -5%; float: left;" >CONTATOS:</h2>    <br>
+<div class="div_tabela_andamento">
 <table class="tabela">
 
       <tr class="tr">
@@ -50,6 +45,7 @@ include("../BANCO/conexao.php");
       </tr>
      <?php   } ?>
 </table>
+</div>
 </center>
 </div>
 </body>

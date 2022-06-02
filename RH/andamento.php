@@ -29,6 +29,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
     }
      ?> 
 </div>
+<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: 3%;"></a>
 <br>
 <h1 class="font_titulos2">Meus chamados</h1>
 <br>

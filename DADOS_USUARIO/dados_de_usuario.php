@@ -1,7 +1,7 @@
-<?php  
+<?php
 //Iniciando a sessão
    session_start();
-   
+
    //Verificando se há um  usuário iniciado
    //Verificando a identificação do usuário
 	if (isset($_SESSION['id_do_usuario'])) {
@@ -35,5 +35,5 @@
    else {
       header("Location: ../index.php");
    }
-   
+
 ?>
