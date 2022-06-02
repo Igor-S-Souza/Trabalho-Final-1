@@ -12,21 +12,17 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	<title></title>
 </head>
 <body class="corpo">
-
 	<center>
-	<!-- <div class="div_nome_empresa">
-        <br>
-        <a href="menu.php"><img src="../IMAGENS/CallServer.svg"></a>
-        <br>
-	</div>
+<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  1% "></a>
 	<br>
-
 	<br>
-	<br> -->
-	<h2>USUÁRIOS</h2>
+	</center>
+	<center>
+	<h2 style="margin-left:5.5%; margin-bottom: -2%; float: left;" >USUÁRIOS:</h2>
 	</center>
 <div class="">
 <center>
+<div class="div_tabela_andamento">
 <table class="tabela">
 	<tr class="tr">
 		<td class="td">
@@ -78,6 +74,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	</tr>
 	<?php } ?>
 </table>
+</div>
 <div id="abrirModal" class="fundo2">
 
 

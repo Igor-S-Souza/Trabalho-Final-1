@@ -13,6 +13,9 @@ $id = $_GET['id'];
 	<title></title>
 </head>
 <body class="corpo">
+	  <center>
+    	<a href="menu.php"><img src="../IMAGENS/logo.svg" style="max-width : 100%; height :200px; margin-top:  -0.5% ; margin-bottom: -5%;"></a>
+    </center>
 <center>
   <div class="div_altsenha">
 <form method="POST" action="verificando_senha_usuario.php?id=<?php echo $id ?>">
