@@ -14,12 +14,6 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	<script src="https://kit.fontawesome.com/875bd3d356.js" crossorigin="anonymous"></script>
 	<title></title>
 </head>
-<?php
-
-  $nomepesquisa=$_POST['nome'];
-  $setorpesquisa=$_POST['setor'];
-
- ?>
 <body class="corpo">
 
 	<center>
@@ -28,14 +22,20 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 	<br>
 	</center>
 	<h2 style="margin-left:5.5%; margin-bottom: -5%;" >USUÁRIOS:</h2>
-
-  <form class="" action="usuario_setor.php" method="post">
+  <form class="" action="usuario_setor.php" method="GET">
     <label class="">PESQUISAR:</label>
     <input type="text" name="nome" value="" placeholder="nome">
     <input type="text" name="setor" value="" placeholder="setor">
     <input type="submit" name="buscar" value="buscar">
   </form>
 
+<?php
+if (isset($_GET['buscar'])) {
+  $nomepesquisa=$_GET['nome'];
+  $setorpesquisa=$_GET['setor'];
+}
+
+ ?>
 		<div>
 			<a href="adicionar_usuario_setor.php"><img src="../IMAGENS/adicionar_usuario.png" class="imagem_adicionar_usuario"></a>
 		</div>
@@ -64,6 +64,7 @@ include ("../DADOS_USUARIO/dados_de_usuario.php");
 		</td>
 	</tr>
 <?php
+if (isset($_GET['buscar'])) {
 if (($nomepesquisa !='') && ($setorpesquisa !='')){
   $selecionando = mysqli_query($conexao, "SELECT * FROM usuario_por_setor where nome='".$nomepesquisa."' and setor ='".
    $setorpesquisa . "' ORDER BY id");
@@ -80,6 +81,7 @@ if (($nomepesquisa !='') && ($setorpesquisa !='')){
 		 $nome = $campo['nome'];
 		 $setor = $campo ['setor'];
 		 $login = $campo['login'];
+
  ?>
 	<tr class="tr2">
 		<td class="td2">
@@ -101,7 +103,7 @@ if (($nomepesquisa !='') && ($setorpesquisa !='')){
 			<a href="editar_senha_usuario.php?id=<?php echo $id; ?>"><img src="../IMAGENS/password.png" class="imagem_cadeado"></a>
 		</td>
 	</tr>
-	<?php } ?>
+	<?php }} ?>
 </table>
 </div>
 <div id="abrirModal" class="fundo2">
